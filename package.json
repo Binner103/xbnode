@@ -4,6 +4,7 @@
   "description": "学习node.js",
   "main": "index.js",
   "scripts": {
+    "start:dev": "./node_modules/.bin/tsc-watch --onSuccess \"node dist/main.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.12",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^3.8.3"
   }
 }
