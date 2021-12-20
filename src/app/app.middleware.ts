@@ -21,6 +21,10 @@ export const defaultErrorHandler = (
     response: Response,
     next: NextFunction
 ) => {
+    if (error) {
+        console.log('警告: ', error.message);
+    }
+
     let statusCode: number, message: string;
 
     /**

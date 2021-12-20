@@ -5,6 +5,9 @@ exports.requestUrl = (request, response, next) => {
     next();
 };
 exports.defaultErrorHandler = (error, request, response, next) => {
+    if (error) {
+        console.log('警告: ', error.message);
+    }
     let statusCode, message;
     switch (error.message) {
         default:
