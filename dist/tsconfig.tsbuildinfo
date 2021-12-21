@@ -402,116 +402,116 @@
         "signature": "fa6eb0822441e0a498d9417cbd84bad6b669923655a2962c05fb58ab349f60ac"
       },
       "../node_modules/@types/lodash/common/common.d.ts": {
-        "version": "675e702f2032766a91eeadee64f51014c64688525da99dccd8178f0c599f13a8",
-        "signature": "675e702f2032766a91eeadee64f51014c64688525da99dccd8178f0c599f13a8"
+        "version": "4335d77dd888fd0c72334c3f9e2afda6a0ef54327a3031bbe1c6dfb315a43ef3",
+        "signature": "4335d77dd888fd0c72334c3f9e2afda6a0ef54327a3031bbe1c6dfb315a43ef3"
       },
       "../node_modules/@types/lodash/common/array.d.ts": {
-        "version": "fe4a2042d087990ebfc7dc0142d5aaf5a152e4baea86b45f283f103ec1e871ea",
-        "signature": "fe4a2042d087990ebfc7dc0142d5aaf5a152e4baea86b45f283f103ec1e871ea"
+        "version": "3a8284527671f504cd85f723657698bb51c7efa8b7d87f2714c181103a0af6b8",
+        "signature": "3a8284527671f504cd85f723657698bb51c7efa8b7d87f2714c181103a0af6b8"
       },
       "../node_modules/@types/lodash/common/collection.d.ts": {
-        "version": "d88a479cccf787b4aa82362150fbeba5211a32dbfafa7b92ba6995ecaf9a1a89",
-        "signature": "d88a479cccf787b4aa82362150fbeba5211a32dbfafa7b92ba6995ecaf9a1a89"
+        "version": "b2ea1bdb4a945c5039c60e3200ee0d345a2a72eaa7432c7f7af04cdfca4626fb",
+        "signature": "b2ea1bdb4a945c5039c60e3200ee0d345a2a72eaa7432c7f7af04cdfca4626fb"
       },
       "../node_modules/@types/lodash/common/date.d.ts": {
-        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
-        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42"
+        "version": "39e8c39dda4414fcd51a2e66c8661074facb8b07b7851f1914d38304a36a97b5",
+        "signature": "39e8c39dda4414fcd51a2e66c8661074facb8b07b7851f1914d38304a36a97b5"
       },
       "../node_modules/@types/lodash/common/function.d.ts": {
-        "version": "c24ad9be9adf28f0927e3d9d9e9cec1c677022356f241ccbbfb97bfe8fb3d1a1",
-        "signature": "c24ad9be9adf28f0927e3d9d9e9cec1c677022356f241ccbbfb97bfe8fb3d1a1"
+        "version": "38c87a85151db6b630ea69931769766a7ebfb031979126d6f4f7d1350c1fd066",
+        "signature": "38c87a85151db6b630ea69931769766a7ebfb031979126d6f4f7d1350c1fd066"
       },
       "../node_modules/@types/lodash/common/lang.d.ts": {
-        "version": "0ec0998e2d085e8ea54266f547976ae152c9dd6cdb9ac4d8a520a230f5ebae84",
-        "signature": "0ec0998e2d085e8ea54266f547976ae152c9dd6cdb9ac4d8a520a230f5ebae84"
+        "version": "a30e2f4e714b19590a788579cb84033cd6998e8879a49b353cdd6bee9560acd7",
+        "signature": "a30e2f4e714b19590a788579cb84033cd6998e8879a49b353cdd6bee9560acd7"
       },
       "../node_modules/@types/lodash/common/math.d.ts": {
-        "version": "9364c7566b0be2f7b70ff5285eb34686f83ccb01bda529b82d23b2a844653bfb",
-        "signature": "9364c7566b0be2f7b70ff5285eb34686f83ccb01bda529b82d23b2a844653bfb"
+        "version": "7a5bcf6690981e92c2a300001cbcb403902b1763eabfd95e5247ebcfb219aaf6",
+        "signature": "7a5bcf6690981e92c2a300001cbcb403902b1763eabfd95e5247ebcfb219aaf6"
       },
       "../node_modules/@types/lodash/common/number.d.ts": {
-        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
-        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a"
+        "version": "c6930c5f4c6094d5e0d6e4d382dee52256db7ace5fa1ac4ebe675f553982f899",
+        "signature": "c6930c5f4c6094d5e0d6e4d382dee52256db7ace5fa1ac4ebe675f553982f899"
       },
       "../node_modules/@types/lodash/common/object.d.ts": {
-        "version": "ae9930989ed57478eb03b9b80ad3efa7a3eacdfeff0f78ecf7894c4963a64f93",
-        "signature": "ae9930989ed57478eb03b9b80ad3efa7a3eacdfeff0f78ecf7894c4963a64f93"
+        "version": "c3c71510abc60b7e88593ee133f346b70c16809f9af4507c0b690f5f52ef4c78",
+        "signature": "c3c71510abc60b7e88593ee133f346b70c16809f9af4507c0b690f5f52ef4c78"
       },
       "../node_modules/@types/lodash/common/seq.d.ts": {
-        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
-        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd"
+        "version": "ddc265fa2a32db41c3b3e7b44c0fccc3fa4dd213c2a1e8a4572955c628eb9e5d",
+        "signature": "ddc265fa2a32db41c3b3e7b44c0fccc3fa4dd213c2a1e8a4572955c628eb9e5d"
       },
       "../node_modules/@types/lodash/common/string.d.ts": {
-        "version": "3e59f00ab03c33717b3130066d4debb272da90eeded4935ff0604c2bc25a5cae",
-        "signature": "3e59f00ab03c33717b3130066d4debb272da90eeded4935ff0604c2bc25a5cae"
+        "version": "5833648328a8ae42ee84efbb8bc0261da121cef9602d34c795a994a1f5097538",
+        "signature": "5833648328a8ae42ee84efbb8bc0261da121cef9602d34c795a994a1f5097538"
       },
       "../node_modules/@types/lodash/common/util.d.ts": {
-        "version": "6ac6f24aff52e62c3950461aa17eab26e3a156927858e6b654baef0058b4cd1e",
-        "signature": "6ac6f24aff52e62c3950461aa17eab26e3a156927858e6b654baef0058b4cd1e"
+        "version": "f7653090e07a843ad08cb4da2ba31cf083cb57f5e9573e7c4c41c2f436273f9b",
+        "signature": "f7653090e07a843ad08cb4da2ba31cf083cb57f5e9573e7c4c41c2f436273f9b"
       },
       "../node_modules/@types/lodash/index.d.ts": {
-        "version": "0714e2046df66c0e93c3330d30dbc0565b3e8cd3ee302cf99e4ede6220e5fec8",
-        "signature": "0714e2046df66c0e93c3330d30dbc0565b3e8cd3ee302cf99e4ede6220e5fec8"
+        "version": "606e917c29a24f40eedc490826f8faf1069f1573a7f5ebcb1933fcf61d15e86a",
+        "signature": "606e917c29a24f40eedc490826f8faf1069f1573a7f5ebcb1933fcf61d15e86a"
       },
       "../node_modules/mysql2/promise.d.ts": {
-        "version": "0b15545be7aacfbbf364443eeec8508c9565771149ed6ca5edef17fdbc62d740",
-        "signature": "0b15545be7aacfbbf364443eeec8508c9565771149ed6ca5edef17fdbc62d740"
+        "version": "6ad62dae15cf21c359e5c6206ae7449b622c4fa082147293b8cfbbbd12347090",
+        "signature": "6ad62dae15cf21c359e5c6206ae7449b622c4fa082147293b8cfbbbd12347090"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/sequences/sequence.d.ts": {
-        "version": "0506328b96bdd546742da97b70a92514b1e4847b9387758f44c7e7052443f98e",
-        "signature": "0506328b96bdd546742da97b70a92514b1e4847b9387758f44c7e7052443f98e"
+        "version": "68a41ce1ffd9549bbb69168110225930b1a9ce8ed76e99b2b0d7c79d0bb7970f",
+        "signature": "68a41ce1ffd9549bbb69168110225930b1a9ce8ed76e99b2b0d7c79d0bb7970f"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts": {
-        "version": "5ba455ec6f0b9b40e71225a835df1c4830eabbc661c0bcdcae29b62b5dce7deb",
-        "signature": "5ba455ec6f0b9b40e71225a835df1c4830eabbc661c0bcdcae29b62b5dce7deb"
+        "version": "55ba75ac236f59f384b5c7ad8908d743fd6db3c1ae70da86d5edcf0ec59ca239",
+        "signature": "55ba75ac236f59f384b5c7ad8908d743fd6db3c1ae70da86d5edcf0ec59ca239"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts": {
-        "version": "4dce711bd3eb8ef017e35ff1ed0957cf748c2f504777bfa935382f376932fd3a",
-        "signature": "4dce711bd3eb8ef017e35ff1ed0957cf748c2f504777bfa935382f376932fd3a"
+        "version": "01883034558bd9cb31b1b486b8aa647b721fe174992f38d17543436f5db818fb",
+        "signature": "01883034558bd9cb31b1b486b8aa647b721fe174992f38d17543436f5db818fb"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/packets/fieldpacket.d.ts": {
-        "version": "d5df920a5da67836acb16e8a4db65135351be93302fb0072d657e671e2d92220",
-        "signature": "d5df920a5da67836acb16e8a4db65135351be93302fb0072d657e671e2d92220"
+        "version": "8a24558aa1ba17c0380edd689c95aba36633981da37ef8be7f746450f2304bc4",
+        "signature": "8a24558aa1ba17c0380edd689c95aba36633981da37ef8be7f746450f2304bc4"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/packets/field.d.ts": {
-        "version": "4c749621a8903239d5d8b683a23816198135456b1d07c6bb208edc9d490e5b9e",
-        "signature": "4c749621a8903239d5d8b683a23816198135456b1d07c6bb208edc9d490e5b9e"
+        "version": "98628e03c5b118bbb61b0a292e349d5fea4c4b2886057c54b60a56866cb22e8d",
+        "signature": "98628e03c5b118bbb61b0a292e349d5fea4c4b2886057c54b60a56866cb22e8d"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts": {
-        "version": "8253131bf88afa306c4b2a3c0e10f25b4a8ca4cc7fc8f132a5a76f15650a7932",
-        "signature": "8253131bf88afa306c4b2a3c0e10f25b4a8ca4cc7fc8f132a5a76f15650a7932"
+        "version": "a239628552d73d8d8be0218da7a8be3eac4c511e5dd2474f31a23409ff75327d",
+        "signature": "a239628552d73d8d8be0218da7a8be3eac4c511e5dd2474f31a23409ff75327d"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts": {
-        "version": "0a496ad0243a1a24d109ca5d318cdded7f402e7e80e56bb6bd7c9e30f32b6254",
-        "signature": "0a496ad0243a1a24d109ca5d318cdded7f402e7e80e56bb6bd7c9e30f32b6254"
+        "version": "59ac0f7a143c27286e509e391755fe59a1b263572cb6883c9c06fd0d75bf3969",
+        "signature": "59ac0f7a143c27286e509e391755fe59a1b263572cb6883c9c06fd0d75bf3969"
       },
       "../node_modules/mysql2/typings/mysql/lib/protocol/sequences/query.d.ts": {
-        "version": "4ddbbe8806de87e667eb37d59387c3ccc87e83776bb9a4f297adc94af1c09943",
-        "signature": "4ddbbe8806de87e667eb37d59387c3ccc87e83776bb9a4f297adc94af1c09943"
+        "version": "97954f2c1c83243c56ed2bd7490212d3bfae279ecae2210db6def030fe97d3b9",
+        "signature": "97954f2c1c83243c56ed2bd7490212d3bfae279ecae2210db6def030fe97d3b9"
       },
       "../node_modules/mysql2/typings/mysql/lib/connection.d.ts": {
-        "version": "9e09ae08416e7ed20a0808ad762e4b53e2cacaeb2bc911614a17ef5444d6891b",
-        "signature": "9e09ae08416e7ed20a0808ad762e4b53e2cacaeb2bc911614a17ef5444d6891b"
+        "version": "11c73e265ff302d2ad11a431044536ed9c4142abdecceaa56ea4c54669912cb6",
+        "signature": "11c73e265ff302d2ad11a431044536ed9c4142abdecceaa56ea4c54669912cb6"
       },
       "../node_modules/mysql2/typings/mysql/lib/poolconnection.d.ts": {
-        "version": "617a866591d14eafd5f4d4d02b5e144d58fec2ea863a8399736e6769273c616d",
-        "signature": "617a866591d14eafd5f4d4d02b5e144d58fec2ea863a8399736e6769273c616d"
+        "version": "90431afe1d271ec1ebe1588b5e837e5aa6a4683cb72bc73965624c22da6128d4",
+        "signature": "90431afe1d271ec1ebe1588b5e837e5aa6a4683cb72bc73965624c22da6128d4"
       },
       "../node_modules/mysql2/typings/mysql/lib/pool.d.ts": {
-        "version": "870c0af6962c426fd9418ba3134b95a55d8ab72f46fbd97447e831d65b14586f",
-        "signature": "870c0af6962c426fd9418ba3134b95a55d8ab72f46fbd97447e831d65b14586f"
+        "version": "2b8026245c77739f50deb4cd40001132accadb8b70d5ad7dfc628c51396177aa",
+        "signature": "2b8026245c77739f50deb4cd40001132accadb8b70d5ad7dfc628c51396177aa"
       },
       "../node_modules/mysql2/typings/mysql/lib/poolcluster.d.ts": {
-        "version": "411f5ee863896acd5ce198869f8394c7dc541bbf363cde2d4f4124471b1ca6dd",
-        "signature": "411f5ee863896acd5ce198869f8394c7dc541bbf363cde2d4f4124471b1ca6dd"
+        "version": "a0920bf1d97c918c32388d642b1c92870ed53b740d95da5e0059ad9ebafe2f17",
+        "signature": "a0920bf1d97c918c32388d642b1c92870ed53b740d95da5e0059ad9ebafe2f17"
       },
       "../node_modules/mysql2/typings/mysql/index.d.ts": {
-        "version": "61f03616b31fd67e19be9872092238ed2b443b0e1a5bda7c61be52c34ec68e89",
-        "signature": "61f03616b31fd67e19be9872092238ed2b443b0e1a5bda7c61be52c34ec68e89"
+        "version": "72bcdfb63437b0360414226299d9c7799c810a2713b28ee8a57eb198cecc4427",
+        "signature": "72bcdfb63437b0360414226299d9c7799c810a2713b28ee8a57eb198cecc4427"
       },
       "../node_modules/mysql2/index.d.ts": {
-        "version": "cf6fac609be0981c2af23ed25d77edfd4d0a141e38a44efe876e1e1d869d4ecc",
-        "signature": "cf6fac609be0981c2af23ed25d77edfd4d0a141e38a44efe876e1e1d869d4ecc"
+        "version": "509c9c3e3c5f2c1cae768bbe7341e462273b7b9750777c88b4a59d2f7994e5eb",
+        "signature": "509c9c3e3c5f2c1cae768bbe7341e462273b7b9750777c88b4a59d2f7994e5eb"
       },
       "../node_modules/dotenv/types/index.d.ts": {
         "version": "143d557fabdd0500b45024279771bcfb19fdac0ff1720b4d16f174ed3f9167b5",
@@ -538,15 +538,39 @@
         "signature": "d9f3bafc390e2e2ea9cc76fa2a48b184d56ea3496e6a8a08813825fbfa552d5e"
       },
       "../src/app/app.middleware.ts": {
-        "version": "f00cc61f91ebf85b4af796e91f8340abdc7eb1d3d6c60ed863109a625b38f04f",
+        "version": "c2337e12c755c3e2dabd86c6adbf208a31fb2a19e64deb4ec567eaf799afed71",
         "signature": "f89af0738b9101b999ff997089a699035c6c1f603521d22a437d586e8c701e82"
       },
       "../src/post/post.router.ts": {
         "version": "b856c612fd036ed953b9d9193baa8847cf28c4e0b18f267ca88b56ce9303b5e3",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
+      "../src/user/user.model.ts": {
+        "version": "487b17ed65e29da2e09779e4fb3d5b6b622502ff3cfe3dbd31b6b49fdb77401e",
+        "signature": "c0c4f6e95c87e2adb92ab955bf7156bfa015433ec41ebfe889c40ceedcdfdc6a"
+      },
+      "../src/user/user.service.ts": {
+        "version": "18c9c35570915961ee6ccef28b7442f64184df20efe1928cb2e4e070ac7e32ea",
+        "signature": "aabb235199f6fef6ee39948d2835d7b02890484af79ed7788db11e35b70c75fc"
+      },
+      "../src/user/user.controller.ts": {
+        "version": "23d67ea18c7aaabe506af7dc25a6aa1d79b35c0e5e2c38e9eb674db24e8aba9e",
+        "signature": "832202dc731f76b8f70e7f74fc53f2238a533d2efcfe96537016ab5d7cecb29f"
+      },
+      "../node_modules/@types/bcrypt/index.d.ts": {
+        "version": "57ddc4e066366bbe04f497f9afce1c88e088dbd09be0618e072754450de3acbb",
+        "signature": "57ddc4e066366bbe04f497f9afce1c88e088dbd09be0618e072754450de3acbb"
+      },
+      "../src/user/user.middleware.ts": {
+        "version": "39f6d37274ea8fb9d16bd15472ae7c78c5ff216e772eda2c8cf101efe5430c47",
+        "signature": "22879e16ad00b13b0c8b1bc4c8c043f75db63b376ecf3ecef35b4e9fb69837a1"
+      },
+      "../src/user/user.router.ts": {
+        "version": "27fe4f8e279bb0a0db9073a35997f59ff2a511de2582e1cba081de615b28048f",
+        "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
+      },
       "../src/app/index.ts": {
-        "version": "b46e2d3a971ffa853bca9551c1a051908a74baaec4b615495a1cf1b447a73d25",
+        "version": "ae29da55e7aaedd9218d669cb182484ef3732741942c36971d626358a80f4305",
         "signature": "629a4ade941bd431c195407a5afd3602c6461fdcc0f65735b7e4a68f8d5d3d51"
       },
       "../src/main.ts": {
@@ -1429,9 +1453,40 @@
         "../src/app/app.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/user/user.model.ts": [
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/user/user.service.ts": [
+        "../src/app/database/mysql.ts",
+        "../src/user/user.model.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/user/user.controller.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../src/user/user.model.ts",
+        "../src/user/user.service.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/bcrypt/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/user/user.middleware.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/bcrypt/index.d.ts",
+        "../src/user/user.service.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/user/user.router.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../src/user/user.controller.ts",
+        "../src/user/user.middleware.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/app/index.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../src/post/post.router.ts",
+        "../src/user/user.router.ts",
         "../src/app/app.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
@@ -2306,6 +2361,25 @@
       "../src/post/post.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
+      "../src/user/user.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../src/user/user.model.ts"
+      ],
+      "../src/user/user.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/user/user.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/user/user.router.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
+      ],
       "../src/app/index.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
@@ -2383,6 +2457,10 @@
       "../node_modules/@types/mysql2/index.d.ts": [
         "../node_modules/@types/mysql2/promise.d.ts",
         "../node_modules/@types/mysql/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/bcrypt/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ]
     },
@@ -2522,6 +2600,10 @@
       "../src/post/post.service.ts",
       "../src/post/post.controller.ts",
       "../src/app/app.middleware.ts",
+      "../src/post/post.router.ts",
+      "../src/user/user.model.ts",
+      "../src/user/user.service.ts",
+      "../src/user/user.controller.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
@@ -2539,7 +2621,9 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/post/post.router.ts"
+      "../node_modules/@types/bcrypt/index.d.ts",
+      "../src/user/user.middleware.ts",
+      "../src/user/user.router.ts"
     ]
   },
   "version": "3.8.3"

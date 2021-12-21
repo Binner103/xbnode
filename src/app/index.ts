@@ -1,5 +1,6 @@
 import express from 'express';
 import postRouter from '../post/post.router';
+import userRouter from '../user/user.router';
 import { defaultErrorHandler } from './app.middleware';
 
 /**
@@ -15,7 +16,7 @@ app.use(express.json());
 /**
  * 路由
  */
-app.use(postRouter);
+app.use(postRouter, userRouter);
 
 /**
  * 使用默认异常处理器
