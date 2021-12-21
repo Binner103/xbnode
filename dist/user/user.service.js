@@ -9,9 +9,12 @@ exports.createUser = async (user) => {
     const [data] = await mysql_1.connection.promise().query(statement, user);
     return data;
 };
-exports.getUserByName = async (name) => {
+exports.getUserByName = async (name, options = {}) => {
+    const { password } = options;
     const statement = `
-        SELECT id, name
+        SELECT id,
+        name
+        ${password ? ', password' : ''}
         FROM user
         WHERE name = ?
     `;
