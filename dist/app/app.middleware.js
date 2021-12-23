@@ -29,6 +29,9 @@ exports.defaultErrorHandler = (error, request, response, next) => {
         case 'PASSWORD_DOES_NOT_MATCH':
             statusCode = 400;
             message = '密码不匹配';
+        case 'UNAUTHORIZED':
+            statusCode = 401;
+            message = '请先登录';
             break;
         default:
             statusCode = 500;

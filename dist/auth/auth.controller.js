@@ -1,7 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const auth_service_1 = require("./auth.service");
 exports.login = async (request, response, next) => {
-    const { name, password } = request.body;
-    response.send({ message: `欢迎回来 , ${name}` });
+    const { user: { id, name } } = request.body;
+    const payload = { id, name };
+    try {
+        const token = auth_service_1.signToken({ payload });
+        response.send({ id, name, token });
+    }
+    catch (error) {
+        next(error);
+    }
+};
+exports.validate = (request, response, next) => {
+    console.log(request.user);
+    response.sendStatus(200);
 };
 //# sourceMappingURL=auth.controller.js.map
