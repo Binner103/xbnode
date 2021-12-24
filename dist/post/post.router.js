@@ -17,7 +17,7 @@ const auth_middleware_1 = require("../auth/auth.middleware");
 const router = express_1.default.Router();
 router.get('/posts', app_middleware_1.requestUrl, postController.index);
 router.post('/posts', auth_middleware_1.authGuard, postController.store);
-router.patch('/posts/:postId', postController.update);
-router.delete('/posts/:postId', postController.destroy);
+router.patch('/posts/:postId', auth_middleware_1.authGuard, auth_middleware_1.assessControl({ possession: true }), postController.update);
+router.delete('/posts/:postId', auth_middleware_1.authGuard, auth_middleware_1.assessControl({ possession: true }), postController.destroy);
 exports.default = router;
 //# sourceMappingURL=post.router.js.map
