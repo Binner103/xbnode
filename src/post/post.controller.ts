@@ -20,6 +20,17 @@ export const index = async(
 };
 
 /**
+ * 注释
+ */
+export const NAME = async (
+    request: Request,
+    response: Response,
+    next: NextFunction
+) => {
+    
+};
+
+/**
  * 创建内容
  */
  export const store = async(

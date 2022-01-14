@@ -542,8 +542,8 @@
         "signature": "4d61dec3051e0dc7ac33175a4fecaf60fac6ba51b31b2e38382b9edb069670bd"
       },
       "../src/post/post.controller.ts": {
-        "version": "2aeddad5912dc5d24934c15f03241dfb701963fbfe067c51874945442f5abb6a",
-        "signature": "d9f3bafc390e2e2ea9cc76fa2a48b184d56ea3496e6a8a08813825fbfa552d5e"
+        "version": "7990fefa91af039fe8e3e9461e5085271ee5b476c0f0dfe30a9d6c12caae9275",
+        "signature": "d34c8389f21562e7001fd327ff07066dcb30486dced03ed436c212270f53a0d3"
       },
       "../src/app/app.middleware.ts": {
         "version": "b7cc32ea6c6dd855c38a15ec43bdc27ccbd76121aabb96381b6f50becfd499ca",
@@ -597,8 +597,32 @@
         "version": "a78221f17b4259a7f029a14eeb00a74e19e90fd5c1f8d65f02173d4d91bc53e4",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
+      "../src/file/file.model.ts": {
+        "version": "6923b202190659e9d225913e33f678da5c7f11f772f476e9786f3a68912e6e13",
+        "signature": "6e8ee2ccc8be884d5a8727298929d5b18c63c83bd32a8ba9efd1a8d08092fc8a"
+      },
+      "../src/file/file.service.ts": {
+        "version": "f3d90042a869b7ed47f15c073cb36b5533e97776c2918eae84de552a851801b3",
+        "signature": "94fba94d5b6d458b9883cb3f9d60fa45c1f0b42bfe5c963ab6907ab45d18ebc3"
+      },
+      "../src/file/file.controller.ts": {
+        "version": "5a752ba061c56231efec971c6b1a0509e079736dae9e03255102a5060b7e06d2",
+        "signature": "7c463b17d209df269363f038e3f99d9289c77ac9ed5ce7b9dd77349ff2f51f3d"
+      },
+      "../node_modules/@types/multer/index.d.ts": {
+        "version": "773d135a3bc375aa4e0c984e1b1167536fa0360749ef8c230433a56d64bc434a",
+        "signature": "773d135a3bc375aa4e0c984e1b1167536fa0360749ef8c230433a56d64bc434a"
+      },
+      "../src/file/file.middleware.ts": {
+        "version": "2affecc6dbebaecb6d73e2697ab5427e0f97c4767a40da3a60d2b970f57fb11d",
+        "signature": "e32e1cf91e5855519769eb055aea679ec99b3529fd9b9d74a56514078be4df7c"
+      },
+      "../src/file/file.router.ts": {
+        "version": "a25efdfd59424d8234bf83d7654d922893855b384877882f6771b69d7e0fd7d4",
+        "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
+      },
       "../src/app/index.ts": {
-        "version": "60e5ac47660fc1784312df27abf15ee3c4414bf29f375f77d7daa04b0d7ba2f8",
+        "version": "465943246147c9e431c4eca1de274c8fa1306596647e466ca22c69ec3b50a69d",
         "signature": "629a4ade941bd431c195407a5afd3602c6461fdcc0f65735b7e4a68f8d5d3d51"
       },
       "../src/main.ts": {
@@ -1550,11 +1574,43 @@
         "../src/auth/auth.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/file/file.model.ts": [
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/file/file.service.ts": [
+        "../src/app/database/mysql.ts",
+        "../src/file/file.model.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/file/file.controller.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/lodash/index.d.ts",
+        "../src/file/file.service.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/multer/index.d.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/file/file.middleware.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/multer/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/file/file.router.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../src/auth/auth.middleware.ts",
+        "../src/file/file.controller.ts",
+        "../src/file/file.middleware.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/app/index.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../src/post/post.router.ts",
         "../src/user/user.router.ts",
         "../src/auth/auth.router.ts",
+        "../src/file/file.router.ts",
         "../src/app/app.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
@@ -2473,6 +2529,30 @@
       "../src/auth/auth.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
+      "../src/file/file.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../src/file/file.model.ts"
+      ],
+      "../src/file/file.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../node_modules/@types/multer/index.d.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/file/file.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/file/file.router.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
+      ],
       "../src/app/index.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
@@ -2690,14 +2770,24 @@
       "../src/post/post.model.ts",
       "../src/post/post.service.ts",
       "../src/post/post.controller.ts",
+      "../src/app/app.middleware.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
       "../node_modules/@types/bcrypt/index.d.ts",
+      "../src/auth/auth.service.ts",
+      "../src/auth/auth.middleware.ts",
+      "../src/post/post.router.ts",
       "../src/user/user.controller.ts",
       "../src/user/user.middleware.ts",
       "../src/user/user.router.ts",
       "../src/auth/auth.controller.ts",
+      "../src/auth/auth.router.ts",
+      "../src/file/file.model.ts",
+      "../src/file/file.service.ts",
+      "../node_modules/@types/multer/index.d.ts",
+      "../src/file/file.middleware.ts",
+      "../src/file/file.router.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
@@ -2715,11 +2805,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/app/app.middleware.ts",
-      "../src/auth/auth.service.ts",
-      "../src/auth/auth.middleware.ts",
-      "../src/auth/auth.router.ts",
-      "../src/post/post.router.ts"
+      "../src/file/file.controller.ts"
     ]
   },
   "version": "3.8.3"
