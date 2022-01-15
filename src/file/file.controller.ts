@@ -1,3 +1,5 @@
+import path from "path";
+import fs from 'fs';
 import e, { Request, Response, NextFunction } from "express";
 import _ from 'lodash';
 import { createFile, findFileById } from "./file.service";
@@ -29,7 +31,8 @@ export const store = async (
         const data = await createFile ({
             ...fileInfo,
             userId,
-            postId
+            postId,
+            ...request.fileMetaData,
         })
 
         // 作出响应
@@ -54,13 +57,67 @@ export const serve = async (
         // 查找文件信息
         const file = await findFileById(parseInt(fileId, 10));
 
+        // 要提供的图像尺寸
+        const {size} = request.query;
+
+        // 文件名与目录
+        let filename = file.filename;
+        let root = 'uploads';
+        let resized = 'resized';
+
+        if (size) {
+            // 可用的图像尺寸
+            const imageSize = ['large', 'medium', 'thumbnail'];
+
+            // 检查文件尺寸是否可用
+            if (!imageSize.some(item => item == size)) {
+                throw new Error('FILE_NOT_FOUND');
+            }
+
+            // 检查文件是否存在
+            const fileExist = fs.existsSync(
+                path.join(root, resized, `${filename}-${size}`)
+            );
+
+            // 设备文件名与目录
+            if (fileExist) {
+                filename = `${filename}-${size}`;
+                root = path.join(root, resized);
+            }
+        }
+
         // 做出响应
-        response.sendFile(file.filename, {
-            root: 'uploads',
+        response.sendFile(filename, {
+            root,
             headers: {
                 'Content-Type': file.mimetype,
             }
         });
+    } catch (error) {
+        next(error);
+    }
+};
+
+/**
+ * 文件信息
+ */
+export const metadata = async (
+    request: Request,
+    response: Response,
+    next: NextFunction
+) => {
+    // 文件ID
+    const { fileId } = request.params;
+
+    try {
+        // 查询文件
+        const file = await findFileById(parseInt(fileId, 10));
+
+        // 准备响应数据
+        const data = _.pick(file, ['id', 'size', 'width', 'height', 'metadata']);
+
+        // 做出响应
+        response.send(data);
     } catch (error) {
         next(error);
     }

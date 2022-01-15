@@ -15,7 +15,8 @@ const auth_middleware_1 = require("../auth/auth.middleware");
 const fileController = __importStar(require("./file.controller"));
 const file_middleware_1 = require("./file.middleware");
 const router = express_1.default.Router();
-router.post('/files', auth_middleware_1.authGuard, file_middleware_1.fileInterceptor, fileController.store);
+router.post('/files', auth_middleware_1.authGuard, file_middleware_1.fileInterceptor, file_middleware_1.fileProcessor, fileController.store);
 router.get('/files/:fileId/serve', fileController.serve);
+router.get('/files/:fileId/metadata', fileController.metadata);
 exports.default = router;
 //# sourceMappingURL=file.router.js.map
