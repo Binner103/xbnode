@@ -598,144 +598,144 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../node_modules/@jimp/core/types/jimp.d.ts": {
-        "version": "11e31384d7e5e16179c37c0382c80f3736fb7c51c1a258283925b42d5f58f24c",
-        "signature": "11e31384d7e5e16179c37c0382c80f3736fb7c51c1a258283925b42d5f58f24c"
+        "version": "39fe2d63488f412deee98cef0b74ef166dab30c0fd61f60f549a47abf1d71a2c",
+        "signature": "39fe2d63488f412deee98cef0b74ef166dab30c0fd61f60f549a47abf1d71a2c"
       },
       "../node_modules/@jimp/core/types/etc.d.ts": {
-        "version": "81cba1ca948d7a158b75d9bf342955793576687c61930f9d87a331a968c820bc",
-        "signature": "81cba1ca948d7a158b75d9bf342955793576687c61930f9d87a331a968c820bc"
+        "version": "10f505e9be46800120ef2951236734893839d992f70aad206372cb8c4eb39c81",
+        "signature": "10f505e9be46800120ef2951236734893839d992f70aad206372cb8c4eb39c81"
       },
       "../node_modules/@jimp/core/types/functions.d.ts": {
-        "version": "ac26e1df718b688cb69170ef4a10c4615796af3042dc4a2d533b295095052142",
-        "signature": "ac26e1df718b688cb69170ef4a10c4615796af3042dc4a2d533b295095052142"
+        "version": "2cd84f4c372cb933d2ace416c29493b8f2c8de8658c3351ac8fc6d15bee6dbac",
+        "signature": "2cd84f4c372cb933d2ace416c29493b8f2c8de8658c3351ac8fc6d15bee6dbac"
       },
       "../node_modules/@jimp/core/types/utils.d.ts": {
-        "version": "e5435a253e31a74a5ba34cddd2983c2b6e7798be830cf9896656f3dd02d513a3",
-        "signature": "e5435a253e31a74a5ba34cddd2983c2b6e7798be830cf9896656f3dd02d513a3"
+        "version": "0c0b691d6bb78730b6a9687f7224384566e81dc226be31d370a24dd2d88ed751",
+        "signature": "0c0b691d6bb78730b6a9687f7224384566e81dc226be31d370a24dd2d88ed751"
       },
       "../node_modules/@jimp/core/types/plugins.d.ts": {
-        "version": "c58c3df82dbbac85d6cbbfb6ece2a425c125db04ef0ceb3f034d33f6258a595b",
-        "signature": "c58c3df82dbbac85d6cbbfb6ece2a425c125db04ef0ceb3f034d33f6258a595b"
+        "version": "afa441a0296029214d474e7a67cd3b355c9425324cc38914ac7b5f6d70b653c0",
+        "signature": "afa441a0296029214d474e7a67cd3b355c9425324cc38914ac7b5f6d70b653c0"
       },
       "../node_modules/@jimp/core/types/index.d.ts": {
-        "version": "107c1b5064b01db7a55616d09c5b6c278cd402c6afb82fcbf95fe28b48920d22",
-        "signature": "107c1b5064b01db7a55616d09c5b6c278cd402c6afb82fcbf95fe28b48920d22"
+        "version": "01d3c13a3776b792a1c29367ed4151f58f6d8a408e9663b197516cb4281d791c",
+        "signature": "01d3c13a3776b792a1c29367ed4151f58f6d8a408e9663b197516cb4281d791c"
       },
       "../node_modules/@jimp/jpeg/index.d.ts": {
-        "version": "616293f491f8f8038be5cc29418493ba333e6e98820b0e85a6bf02a333667eb8",
-        "signature": "616293f491f8f8038be5cc29418493ba333e6e98820b0e85a6bf02a333667eb8"
+        "version": "a0adfad9eb0856fb32e9bfbe77344c0dd9437417d72c2ad94befb09426d4f651",
+        "signature": "a0adfad9eb0856fb32e9bfbe77344c0dd9437417d72c2ad94befb09426d4f651"
       },
       "../node_modules/@jimp/png/index.d.ts": {
-        "version": "e32df6324918608e0d404ed125e7f2429a21315830f81d15a22958e53c3bbe97",
-        "signature": "e32df6324918608e0d404ed125e7f2429a21315830f81d15a22958e53c3bbe97"
+        "version": "fdff492307d93e4f0c6bfd10259968a8ca0d9e24cc767c29ebbc8f5695a889b0",
+        "signature": "fdff492307d93e4f0c6bfd10259968a8ca0d9e24cc767c29ebbc8f5695a889b0"
       },
       "../node_modules/@jimp/bmp/index.d.ts": {
-        "version": "0f6dc41bab0e1f96f70f46d797644d0d32a491e34a390e3411f61ecbbef3159b",
-        "signature": "0f6dc41bab0e1f96f70f46d797644d0d32a491e34a390e3411f61ecbbef3159b"
+        "version": "34529f96dd5faa6b69528b175e33a6712108b567be3e3d6585596fa62dce9680",
+        "signature": "34529f96dd5faa6b69528b175e33a6712108b567be3e3d6585596fa62dce9680"
       },
       "../node_modules/@jimp/tiff/index.d.ts": {
-        "version": "07d406e2b9185f08617234e5d1307789c202e99159f3aa1a13670df39589a2fe",
-        "signature": "07d406e2b9185f08617234e5d1307789c202e99159f3aa1a13670df39589a2fe"
+        "version": "ff65147c9f3570cac8958dcec29ec2633b4df138188f088c014abbdcf2e811fb",
+        "signature": "ff65147c9f3570cac8958dcec29ec2633b4df138188f088c014abbdcf2e811fb"
       },
       "../node_modules/@jimp/gif/index.d.ts": {
-        "version": "6f690985c908fd2d566f694394016be3e757fb7094e1e3d8be8545813af0453f",
-        "signature": "6f690985c908fd2d566f694394016be3e757fb7094e1e3d8be8545813af0453f"
+        "version": "5acf483222120826fccc57517b584a7d2229a7eb71870680c72623f288362332",
+        "signature": "5acf483222120826fccc57517b584a7d2229a7eb71870680c72623f288362332"
       },
       "../node_modules/@jimp/types/index.d.ts": {
-        "version": "cf34998d6c868eb5d814521523731767ceed7d00bddaf40f82f89ef861c411bf",
-        "signature": "cf34998d6c868eb5d814521523731767ceed7d00bddaf40f82f89ef861c411bf"
+        "version": "c0e21d085c00b769006d720a660478a09ec8587cfc3bf747a323500fa80cb75b",
+        "signature": "c0e21d085c00b769006d720a660478a09ec8587cfc3bf747a323500fa80cb75b"
       },
       "../node_modules/@jimp/plugin-blit/index.d.ts": {
-        "version": "0298fb593e400ab7d61366fad5e84399f224bee4bb1cd3dc0cfaae0e2929c3d7",
-        "signature": "0298fb593e400ab7d61366fad5e84399f224bee4bb1cd3dc0cfaae0e2929c3d7"
+        "version": "ade9626c7af6850f9990be11881a1c77eeb5556bebe1686ffda3a50815c6a3f8",
+        "signature": "ade9626c7af6850f9990be11881a1c77eeb5556bebe1686ffda3a50815c6a3f8"
       },
       "../node_modules/@jimp/plugin-blur/index.d.ts": {
-        "version": "6adab4f1c0c67ce871828183137449e443e17a4142529a32b22f189f3c737af6",
-        "signature": "6adab4f1c0c67ce871828183137449e443e17a4142529a32b22f189f3c737af6"
+        "version": "0a7673ddf0d1eb78038e3869efc7d06d1d5d0e4adb643f23f29d46bc6cc857a1",
+        "signature": "0a7673ddf0d1eb78038e3869efc7d06d1d5d0e4adb643f23f29d46bc6cc857a1"
       },
       "../node_modules/@jimp/plugin-circle/index.d.ts": {
-        "version": "1be04a4005e2b7f5b2688e2d4de704ae68c9d95ebacc0367b8b5730bd8c50fb1",
-        "signature": "1be04a4005e2b7f5b2688e2d4de704ae68c9d95ebacc0367b8b5730bd8c50fb1"
+        "version": "fc8bdf2c7678a7776054a00db19093a8e78672a005965abc277532218e340881",
+        "signature": "fc8bdf2c7678a7776054a00db19093a8e78672a005965abc277532218e340881"
       },
       "../node_modules/@jimp/plugin-color/index.d.ts": {
-        "version": "83c2f5af37e6d351b3d2f6824c8c0fe85361e2640035bef7c9e56a5dfeedcd35",
-        "signature": "83c2f5af37e6d351b3d2f6824c8c0fe85361e2640035bef7c9e56a5dfeedcd35"
+        "version": "68bcb7d0351bca51389d244f24355dd62067b02d7abfa12cf999d2765517c8d1",
+        "signature": "68bcb7d0351bca51389d244f24355dd62067b02d7abfa12cf999d2765517c8d1"
       },
       "../node_modules/@jimp/plugin-contain/index.d.ts": {
-        "version": "101b82e4cc6bc4230c4c764ce8f28d0841a665c38f7c1a40981b2727ebc1bf3c",
-        "signature": "101b82e4cc6bc4230c4c764ce8f28d0841a665c38f7c1a40981b2727ebc1bf3c"
+        "version": "0c22bfeb2cadc5e268a72816e3c799bd3d077e973876970d2403fcb06d276cb2",
+        "signature": "0c22bfeb2cadc5e268a72816e3c799bd3d077e973876970d2403fcb06d276cb2"
       },
       "../node_modules/@jimp/plugin-cover/index.d.ts": {
-        "version": "9c7efe7cc60262099e1f7bb4fbc6d0014df273c9049e744ffb484e6761a7e2ad",
-        "signature": "9c7efe7cc60262099e1f7bb4fbc6d0014df273c9049e744ffb484e6761a7e2ad"
+        "version": "3b3d040cadb4ba7ca5acf68e361dad4671c6f7e4ecf9a4c1f60399047f6f8634",
+        "signature": "3b3d040cadb4ba7ca5acf68e361dad4671c6f7e4ecf9a4c1f60399047f6f8634"
       },
       "../node_modules/@jimp/plugin-crop/index.d.ts": {
-        "version": "c6162dc88ce4d91ebfceac7f709097485675c90ee4c816931d26754a54e19164",
-        "signature": "c6162dc88ce4d91ebfceac7f709097485675c90ee4c816931d26754a54e19164"
+        "version": "3cabfbbf78847c92ae04a0dc43bb5363f5a8c01288f0653f754e2e6482635403",
+        "signature": "3cabfbbf78847c92ae04a0dc43bb5363f5a8c01288f0653f754e2e6482635403"
       },
       "../node_modules/@jimp/plugin-displace/index.d.ts": {
-        "version": "0634e12db1decbf3edc562dcf8e2b7f4affe4919a21005d6bea90aa9532612aa",
-        "signature": "0634e12db1decbf3edc562dcf8e2b7f4affe4919a21005d6bea90aa9532612aa"
+        "version": "55ac9bf59cc25139a3faa3a71179a401251ccc7c353b7f0d59eeb4a8b467ce69",
+        "signature": "55ac9bf59cc25139a3faa3a71179a401251ccc7c353b7f0d59eeb4a8b467ce69"
       },
       "../node_modules/@jimp/plugin-dither/index.d.ts": {
-        "version": "3c464b3eecdf5cd990dcd882a04608f4ae29b99fc24ffbff970e340ac5d4eef1",
-        "signature": "3c464b3eecdf5cd990dcd882a04608f4ae29b99fc24ffbff970e340ac5d4eef1"
+        "version": "a6a46c53ec86987ceafdf9f7d437c3ab0d3a6c447a898b1b30b8d9b02e38b0fd",
+        "signature": "a6a46c53ec86987ceafdf9f7d437c3ab0d3a6c447a898b1b30b8d9b02e38b0fd"
       },
       "../node_modules/@jimp/plugin-fisheye/index.d.ts": {
-        "version": "6daca098a3cf1585848a1464458143442ef8042470cb975ef7ab360afa7651b6",
-        "signature": "6daca098a3cf1585848a1464458143442ef8042470cb975ef7ab360afa7651b6"
+        "version": "68a4392de534787ee65148ee1c3131af472a701e5c4dc2d3ce1feb5817d15223",
+        "signature": "68a4392de534787ee65148ee1c3131af472a701e5c4dc2d3ce1feb5817d15223"
       },
       "../node_modules/@jimp/plugin-flip/index.d.ts": {
-        "version": "c7b5b995bd17d27758d13f8d200d9748d8fcb5491dd5593a4e840e5abdd4e0c3",
-        "signature": "c7b5b995bd17d27758d13f8d200d9748d8fcb5491dd5593a4e840e5abdd4e0c3"
+        "version": "4c79c60a5e57d9b242de180df0d28cf752da5e763373ded69d544a34f67a579f",
+        "signature": "4c79c60a5e57d9b242de180df0d28cf752da5e763373ded69d544a34f67a579f"
       },
       "../node_modules/@jimp/plugin-gaussian/index.d.ts": {
-        "version": "a8d4833b2b4896c44af60626a844a086c8120807cf2e6a39d2dc80ab5d1af972",
-        "signature": "a8d4833b2b4896c44af60626a844a086c8120807cf2e6a39d2dc80ab5d1af972"
+        "version": "e8806681c5024985d7a10115e095cb834a30775ecb4192e0e9cd5219c628ca59",
+        "signature": "e8806681c5024985d7a10115e095cb834a30775ecb4192e0e9cd5219c628ca59"
       },
       "../node_modules/@jimp/plugin-invert/index.d.ts": {
-        "version": "40156b6e614fe0b0aa4af9c21a0157eb84758e572ae700788ff9d436fae78c2b",
-        "signature": "40156b6e614fe0b0aa4af9c21a0157eb84758e572ae700788ff9d436fae78c2b"
+        "version": "27b9a67a8da6f5d3a6ddf90ff7899e1637ee38a768faa927e6b88fa4e502ada3",
+        "signature": "27b9a67a8da6f5d3a6ddf90ff7899e1637ee38a768faa927e6b88fa4e502ada3"
       },
       "../node_modules/@jimp/plugin-mask/index.d.ts": {
-        "version": "f0867230a5838be63be92c9480a65f1d075eec34683212e080002760a6174c83",
-        "signature": "f0867230a5838be63be92c9480a65f1d075eec34683212e080002760a6174c83"
+        "version": "ca034f828da4b06dcaee68a0dddc37dc27260e366aeb722984eb606618692574",
+        "signature": "ca034f828da4b06dcaee68a0dddc37dc27260e366aeb722984eb606618692574"
       },
       "../node_modules/@jimp/plugin-normalize/index.d.ts": {
-        "version": "098d6936c459f18218ad71cde5aa25562a74461701c3551c544aecfd2c6226e7",
-        "signature": "098d6936c459f18218ad71cde5aa25562a74461701c3551c544aecfd2c6226e7"
+        "version": "772d774055190bd21b5eca93b281aa4db4b8061811286e9552e14401fcaf5b45",
+        "signature": "772d774055190bd21b5eca93b281aa4db4b8061811286e9552e14401fcaf5b45"
       },
       "../node_modules/@jimp/plugin-print/index.d.ts": {
-        "version": "405dc951dda9d1ba88aa742a04541a749973bafa7873f1b49c3065a6dc05e170",
-        "signature": "405dc951dda9d1ba88aa742a04541a749973bafa7873f1b49c3065a6dc05e170"
+        "version": "8acf50a98910040df01b5bffd4aaede51a96f0ba1ba12b74e05f5a8b596eb2db",
+        "signature": "8acf50a98910040df01b5bffd4aaede51a96f0ba1ba12b74e05f5a8b596eb2db"
       },
       "../node_modules/@jimp/plugin-resize/index.d.ts": {
-        "version": "fc9091f36b50dfc7e47b6183bd7b4294a20878e1d826f38f44e7053d403358ed",
-        "signature": "fc9091f36b50dfc7e47b6183bd7b4294a20878e1d826f38f44e7053d403358ed"
+        "version": "1276dff8e2add7a44c826954e5f362a29d040585cec42c5a7d49fb05741661ba",
+        "signature": "1276dff8e2add7a44c826954e5f362a29d040585cec42c5a7d49fb05741661ba"
       },
       "../node_modules/@jimp/plugin-rotate/index.d.ts": {
-        "version": "4c846ba0a980408c10c12ed8358bcabdb8ca97aee0bb8869becaea412d6e89bb",
-        "signature": "4c846ba0a980408c10c12ed8358bcabdb8ca97aee0bb8869becaea412d6e89bb"
+        "version": "b89f07350939c699e23197c2e7d16d174c362d5d0502d16d8fc399ddcd3cae32",
+        "signature": "b89f07350939c699e23197c2e7d16d174c362d5d0502d16d8fc399ddcd3cae32"
       },
       "../node_modules/@jimp/plugin-scale/index.d.ts": {
-        "version": "ed995ca53b2c1b6bc1555bbee8bc12ea290b2117d89dc1c27c1333f8c3a97d35",
-        "signature": "ed995ca53b2c1b6bc1555bbee8bc12ea290b2117d89dc1c27c1333f8c3a97d35"
+        "version": "c44493321027993095dbeda9df4b0eff33561fd1a956b3a0aff1c70f370942fa",
+        "signature": "c44493321027993095dbeda9df4b0eff33561fd1a956b3a0aff1c70f370942fa"
       },
       "../node_modules/@jimp/plugin-shadow/index.d.ts": {
-        "version": "26a8c45aaa7c9b7cb356b565f880295b5a94b14f0c348b41dd776cbeab9f06e1",
-        "signature": "26a8c45aaa7c9b7cb356b565f880295b5a94b14f0c348b41dd776cbeab9f06e1"
+        "version": "bf78a282bfcd745357f382ecb99422b95878cce53198a12401c6b1c6d94f23f6",
+        "signature": "bf78a282bfcd745357f382ecb99422b95878cce53198a12401c6b1c6d94f23f6"
       },
       "../node_modules/@jimp/plugin-threshold/index.d.ts": {
-        "version": "a18ab8a8420f372aab81c57e9eb3b0c29a8a7760eab40328765d65a3d2dff5ac",
-        "signature": "a18ab8a8420f372aab81c57e9eb3b0c29a8a7760eab40328765d65a3d2dff5ac"
+        "version": "481d30f8eac2f42af44d48d547bce8489e14bc7930f9fafcf8ffa3e75fd10675",
+        "signature": "481d30f8eac2f42af44d48d547bce8489e14bc7930f9fafcf8ffa3e75fd10675"
       },
       "../node_modules/@jimp/plugins/index.d.ts": {
-        "version": "15465dcb7504e00902baf1c1bf1195c35a20612a300fcd8482836c9319af2d1b",
-        "signature": "15465dcb7504e00902baf1c1bf1195c35a20612a300fcd8482836c9319af2d1b"
+        "version": "f3966097164866fc99991d028adebd878e859725b11bdfb54151791ea14f9b0b",
+        "signature": "f3966097164866fc99991d028adebd878e859725b11bdfb54151791ea14f9b0b"
       },
       "../node_modules/jimp/types/ts3.1/index.d.ts": {
-        "version": "762539fa7b805a2ca94de8b9587db0dfe12ae440848678d028707b70f31acced",
-        "signature": "762539fa7b805a2ca94de8b9587db0dfe12ae440848678d028707b70f31acced"
+        "version": "1a000877a7dd310fa019211fb6f2fb670afeb75aff46ace34e4f5234711d5d8c",
+        "signature": "1a000877a7dd310fa019211fb6f2fb670afeb75aff46ace34e4f5234711d5d8c"
       },
       "../src/file/file.model.ts": {
         "version": "6923b202190659e9d225913e33f678da5c7f11f772f476e9786f3a68912e6e13",
@@ -3272,10 +3272,29 @@
       "../src/user/user.router.ts",
       "../src/auth/auth.controller.ts",
       "../src/auth/auth.router.ts",
-      "../node_modules/@jimp/core/types/jimp.d.ts",
+      "../src/file/file.model.ts",
+      "../node_modules/@types/multer/index.d.ts",
+      "../src/app/index.ts",
+      "../src/main.ts",
+      "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/resultsetheader.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
+      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
+      "../node_modules/@types/mysql/lib/connection.d.ts",
+      "../node_modules/@types/mysql/lib/poolconnection.d.ts",
+      "../node_modules/@types/mysql/lib/pool.d.ts",
+      "../node_modules/@types/mysql/lib/poolcluster.d.ts",
+      "../node_modules/@types/mysql/index.d.ts",
+      "../node_modules/@types/mysql2/promise.d.ts",
+      "../node_modules/@types/mysql2/index.d.ts",
       "../node_modules/@jimp/core/types/etc.d.ts",
-      "../node_modules/@jimp/core/types/functions.d.ts",
       "../node_modules/@jimp/core/types/utils.d.ts",
+      "../node_modules/@jimp/core/types/jimp.d.ts",
+      "../node_modules/@jimp/core/types/functions.d.ts",
       "../node_modules/@jimp/core/types/plugins.d.ts",
       "../node_modules/@jimp/core/types/index.d.ts",
       "../node_modules/@jimp/jpeg/index.d.ts",
@@ -3307,29 +3326,10 @@
       "../node_modules/@jimp/plugin-threshold/index.d.ts",
       "../node_modules/@jimp/plugins/index.d.ts",
       "../node_modules/jimp/types/ts3.1/index.d.ts",
-      "../src/file/file.model.ts",
       "../src/file/file.service.ts",
-      "../node_modules/@types/multer/index.d.ts",
+      "../src/file/file.controller.ts",
       "../src/file/file.middleware.ts",
-      "../src/file/file.router.ts",
-      "../src/app/index.ts",
-      "../src/main.ts",
-      "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/fieldpacket.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/field.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/resultsetheader.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/packets/index.d.ts",
-      "../node_modules/@types/mysql/lib/protocol/sequences/query.d.ts",
-      "../node_modules/@types/mysql/lib/connection.d.ts",
-      "../node_modules/@types/mysql/lib/poolconnection.d.ts",
-      "../node_modules/@types/mysql/lib/pool.d.ts",
-      "../node_modules/@types/mysql/lib/poolcluster.d.ts",
-      "../node_modules/@types/mysql/index.d.ts",
-      "../node_modules/@types/mysql2/promise.d.ts",
-      "../node_modules/@types/mysql2/index.d.ts",
-      "../src/file/file.controller.ts"
+      "../src/file/file.router.ts"
     ]
   },
   "version": "3.8.3"
