@@ -1,5 +1,5 @@
 /// <reference types="qs" />
-import e from "express";
-export declare const store: (request: e.Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs, Record<string, any>>, response: e.Response<any, Record<string, any>>, next: e.NextFunction) => Promise<void>;
-export declare const serve: (request: e.Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs, Record<string, any>>, response: e.Response<any, Record<string, any>>, next: e.NextFunction) => Promise<void>;
-export declare const metadata: (request: e.Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs, Record<string, any>>, response: e.Response<any, Record<string, any>>, next: e.NextFunction) => Promise<void>;
+import { Request, Response, NextFunction } from "express";
+export declare const store: (request: Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs, Record<string, any>>, response: Response<any, Record<string, any>>, next: NextFunction) => Promise<void>;
+export declare const serve: (request: Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs, Record<string, any>>, response: Response<any, Record<string, any>>, next: NextFunction) => Promise<void>;
+export declare const metadata: (request: Request<import("express-serve-static-core").ParamsDictionary, any, any, import("qs").ParsedQs, Record<string, any>>, response: Response<any, Record<string, any>>, next: NextFunction) => Promise<void>;

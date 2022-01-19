@@ -1,6 +1,6 @@
 import path from "path";
 import fs from 'fs';
-import e, { Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction } from "express";
 import _ from 'lodash';
 import { createFile, findFileById } from "./file.service";
 

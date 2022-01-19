@@ -1,4 +1,4 @@
-import e, { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import _ from 'lodash';
 import { getPosts, createPost, updatePost, deletePost, createPostTag, postHasTag, deletePostTag} from './post.service';
 import { TagModel } from '../tag/tag.model';
