@@ -15,8 +15,6 @@ exports.index = async (request, response, next) => {
         next(error);
     }
 };
-exports.NAME = async (request, response, next) => {
-};
 exports.store = async (request, response, next) => {
     const { title, content } = request.body;
     const { id: userId } = request.user;

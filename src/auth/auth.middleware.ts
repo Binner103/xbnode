@@ -78,7 +78,7 @@ export const authGuard = (
 interface AccessControlOptions {
     possession?: boolean;
 }
-export const assessControl = (options: AccessControlOptions) => {
+export const accessControl = (options: AccessControlOptions) => {
     return async (request: Request, response: Response, next: NextFunction) => {
         console.log(' 访问控制');
 

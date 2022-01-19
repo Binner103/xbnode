@@ -1,7 +1,7 @@
 import express from 'express';
 import * as postController from './post.controller';
 import { requestUrl } from '../app/app.middleware';
-import { authGuard, assessControl} from '../auth/auth.middleware';
+import { authGuard, accessControl} from '../auth/auth.middleware';
 
 const router = express.Router();
 
@@ -18,22 +18,22 @@ router.post('/posts',authGuard, postController.store);
 /**
  * 更新内容
  */
-router.patch('/posts/:postId', authGuard, assessControl( {possession: true} ), postController.update);
+router.patch('/posts/:postId', authGuard, accessControl( {possession: true} ), postController.update);
 
 /**
  * 删除内容
  */
-router.delete('/posts/:postId', authGuard, assessControl( {possession: true} ), postController.destroy);
+router.delete('/posts/:postId', authGuard, accessControl( {possession: true} ), postController.destroy);
 
 /**
  * 添加内容标签
  */
-router.post('/posts/:postId/tag', authGuard, assessControl({possession: true}), postController.storePostTag);
+router.post('/posts/:postId/tag', authGuard, accessControl({possession: true}), postController.storePostTag);
 
 /**
  * 删除内容标签
  */
-router.delete('/posts/:postId/tag', authGuard, assessControl({possession: true}), postController.destroyPostTag);
+router.delete('/posts/:postId/tag', authGuard, accessControl({possession: true}), postController.destroyPostTag);
 
 /**
  * 导出路由

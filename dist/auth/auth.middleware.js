@@ -51,7 +51,7 @@ exports.authGuard = (request, response, next) => {
         next(new Error('UNAUTHORIZED'));
     }
 };
-exports.assessControl = (options) => {
+exports.accessControl = (options) => {
     return async (request, response, next) => {
         console.log(' 访问控制');
         const { possession } = options;
