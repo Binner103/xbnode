@@ -1,19 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const mysql_1 = require("../app/database/mysql");
+const post_provider_1 = require("./post.provider");
 exports.getPosts = async () => {
     const statement = `
-    SELECT
-        post.id,
-        post.title,
-        post.content,
-        JSON_OBJECT(
-            'id', user.id,
-            'name', user.name
-        ) as user
-    FROM post
-    LEFT JOIN user
-        ON user.id = post.userId
+        SELECT
+            post.id,
+            post.title,
+            post.content,
+            ${post_provider_1.sqlFragment.user},
+            ${post_provider_1.sqlFragment.totalComments},
+            ${post_provider_1.sqlFragment.file}
+        FROM post
+        ${post_provider_1.sqlFragment.leftJoinUser}
+        ${post_provider_1.sqlFragment.leftJoinOneFile}
+        GROUP BY post.id
     `;
     const [data] = await mysql_1.connection.promise().query(statement);
     return data;

@@ -537,8 +537,12 @@
         "version": "655de4be1e587ac5597c9e66b734370fb80be1827839a8d1a32a2446d49ea0e3",
         "signature": "b052e6fe7bad6bfc4c1b47a3fe023aa6aa9ac54f597cb8d61925b859fc7c9e2b"
       },
+      "../src/post/post.provider.ts": {
+        "version": "4a7a02ef9eee390e90ebd7834218cd3a20837c9fb37043cf660cbc48e13f4aa9",
+        "signature": "f25cfa4072a1b23191499e3a3ffd21fee56a8d466542025b33db358e1f2682e7"
+      },
       "../src/post/post.service.ts": {
-        "version": "68dd025c44489fe0567d55e3e68932071649cf31c55f73677c7e5b3ce761bc6d",
+        "version": "191483ec831fd9a83443f19c81a952def17fd415d6c08c6243ebc11b6f8b81dd",
         "signature": "e4ad7d8c960edbd7c5129b9cd6f73483aaa90898679ba0d111a18b5a035a8c28"
       },
       "../src/tag/tag.model.ts": {
@@ -1671,9 +1675,13 @@
       "../src/post/post.model.ts": [
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/post/post.provider.ts": [
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/post/post.service.ts": [
         "../src/app/database/mysql.ts",
         "../src/post/post.model.ts",
+        "../src/post/post.provider.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/tag/tag.model.ts": [
@@ -3435,6 +3443,7 @@
       "../src/comment/comment.model.ts",
       "../src/comment/comment.service.ts",
       "../src/comment/comment.controller.ts",
+      "../src/comment/comment.router.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../src/comment/comment.middleware.ts",
@@ -3454,7 +3463,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/comment/comment.router.ts"
+      "../src/post/post.provider.ts"
     ]
   },
   "version": "3.8.3"
