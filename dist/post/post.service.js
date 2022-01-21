@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mysql_1 = require("../app/database/mysql");
 const post_provider_1 = require("./post.provider");
-exports.getPosts = async () => {
+exports.getPosts = async (options) => {
+    const { sort } = options;
     const statement = `
         SELECT
             post.id,
@@ -10,11 +11,14 @@ exports.getPosts = async () => {
             post.content,
             ${post_provider_1.sqlFragment.user},
             ${post_provider_1.sqlFragment.totalComments},
-            ${post_provider_1.sqlFragment.file}
+            ${post_provider_1.sqlFragment.file},
+            ${post_provider_1.sqlFragment.tags}
         FROM post
         ${post_provider_1.sqlFragment.leftJoinUser}
         ${post_provider_1.sqlFragment.leftJoinOneFile}
+        ${post_provider_1.sqlFragment.leftJoinTag}
         GROUP BY post.id
+        ORDER BY ${sort}
     `;
     const [data] = await mysql_1.connection.promise().query(statement);
     return data;
