@@ -20,4 +20,26 @@ exports.sort = async (request, response, next) => {
     request.sort = sqlSort;
     next();
 };
+exports.filter = async (request, response, next) => {
+    const { tag, user, action } = request.query;
+    request.filter = {
+        name: 'default',
+        sql: 'post.id IS NOT NULL'
+    };
+    if (tag && !user && !action) {
+        request.filter = {
+            name: 'tagName',
+            sql: 'tag.name = ?',
+            param: tag
+        };
+    }
+    if (user && action == 'published' && !tag) {
+        request.filter = {
+            name: 'userPublished',
+            sql: 'user.id = ?',
+            param: user
+        };
+    }
+    next();
+};
 //# sourceMappingURL=post.middleware.js.map
