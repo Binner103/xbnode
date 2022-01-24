@@ -11,4 +11,5 @@ _a = process.env, exports.MYSQL_HOST = _a.MYSQL_HOST, exports.MYSQL_PORT = _a.MY
 _b = process.env, exports.PRIVATE_KEY = _b.PRIVATE_KEY, exports.PUBLIC_KEY = _b.PUBLIC_KEY;
 exports.PRIVATE_KEY = Buffer.from(exports.PRIVATE_KEY, 'base64').toString();
 exports.PUBLIC_KEY = Buffer.from(exports.PUBLIC_KEY, 'base64').toString();
+exports.POSTS_PER_PAGE = process.env.POSTS_PER_PAGE;
 //# sourceMappingURL=app.config.js.map

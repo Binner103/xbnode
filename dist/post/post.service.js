@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mysql_1 = require("../app/database/mysql");
 const post_provider_1 = require("./post.provider");
 exports.getPosts = async (options) => {
-    const { sort, filter } = options;
-    let params = [];
+    const { sort, filter, pagination: { limit, offset } } = options;
+    let params = [limit, offset];
     if (filter.param) {
         params = [filter.param, ...params];
     }
@@ -24,6 +24,8 @@ exports.getPosts = async (options) => {
         WHERE ${filter.sql}
         GROUP BY post.id
         ORDER BY ${sort}
+        LIMIT ?
+        OFFSET ?
     `;
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data;
