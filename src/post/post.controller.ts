@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import _ from 'lodash';
-import { getPosts, createPost, updatePost, deletePost, createPostTag, postHasTag, deletePostTag} from './post.service';
+import { getPosts, createPost, updatePost, deletePost, createPostTag, postHasTag, deletePostTag, getPostTotalCount} from './post.service';
 import { TagModel } from '../tag/tag.model';
 import { getTagByName, createTag} from '../tag/tag.service';
 
@@ -13,6 +13,16 @@ export const index = async(
     response: Response,
     next: NextFunction
 ) => {
+    try {
+        // 统计内容数量
+        const totalCount = await getPostTotalCount({ filter: request.filter });
+
+        // 设置响应头部
+        response.header('X-Total-Count', totalCount);
+    } catch (error) {
+        next(error);
+    }
+
     try {
         const posts = await getPosts({
             sort: request.sort,

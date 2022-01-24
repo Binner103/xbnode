@@ -79,4 +79,19 @@ exports.deletePostTag = async (postId, tagId) => {
     const [data] = await mysql_1.connection.promise().query(statement, [postId, tagId]);
     return data;
 };
+exports.getPostTotalCount = async (options) => {
+    const { filter } = options;
+    let params = [filter.param];
+    const statement = `
+        SELECT
+            COUNT(DISTINCT post.id) AS total
+        FROM post
+        ${post_provider_1.sqlFragment.leftJoinUser}
+        ${post_provider_1.sqlFragment.leftJoinOneFile}
+        ${post_provider_1.sqlFragment.leftJoinTag}
+        WHERE ${filter.sql}
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, params);
+    return data[0].total;
+};
 //# sourceMappingURL=post.service.js.map

@@ -8,6 +8,13 @@ const post_service_1 = require("./post.service");
 const tag_service_1 = require("../tag/tag.service");
 exports.index = async (request, response, next) => {
     try {
+        const totalCount = await post_service_1.getPostTotalCount({ filter: request.filter });
+        response.header('X-Total-Count', totalCount);
+    }
+    catch (error) {
+        next(error);
+    }
+    try {
         const posts = await post_service_1.getPosts({
             sort: request.sort,
             filter: request.filter,
