@@ -6,8 +6,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const multer_1 = __importDefault(require("multer"));
 const jimp_1 = __importDefault(require("jimp"));
 const file_service_1 = require("./file.service");
+exports.fileFilter = (fileTypes) => {
+    return (request, file, callback) => {
+        const allowed = fileTypes.some(type => type === file.mimetype);
+        if (allowed) {
+            callback(null, true);
+        }
+        else {
+            callback(new Error('FILE_TYPE_NOT_ACCEPT'));
+        }
+    };
+};
+const fileUploadFilter = exports.fileFilter(['image/png', 'image/jpg', 'image/jpeg']);
 const fileUpload = multer_1.default({
     dest: 'uploads/',
+    fileFilter: fileUploadFilter,
 });
 exports.fileInterceptor = fileUpload.single('file');
 exports.fileProcessor = async (request, response, next) => {

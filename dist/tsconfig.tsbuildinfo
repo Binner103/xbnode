@@ -766,8 +766,8 @@
         "signature": "245d322beaa0f51f38d2d70c1aacb1819177e8ee2abf3ac618a2272612ce1676"
       },
       "../src/file/file.middleware.ts": {
-        "version": "a20db6e38be6907dbe52bfbf24740105831d0260d86ebcab0c777145b42fe983",
-        "signature": "354071a5143f602fe96421703cc392a98f85ddfad0a1d351540b5fdcb19dde2e"
+        "version": "bd4de419c6fdaa9e8aa5be52f6c234d07cb4910fd96255ebe2aaeb3301c6e398",
+        "signature": "be04c982f7d7988fdf97f684eaa58af05ca848edc14d48d20d586bb7b3dcf051"
       },
       "../src/file/file.router.ts": {
         "version": "3e7acceb2853a069b3c1743ce08e4d4b7181aba04df43a65511caad7325c8e3e",
@@ -806,7 +806,7 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/app/app.middleware.ts": {
-        "version": "9477b1d5e8e9e13ad749e18aee9d42dd077e56cb70117d4012abf7409d618774",
+        "version": "2a64df3d57f65a4d98a800a63e0d510c2c9bea126927331af355f871b3e916d1",
         "signature": "f89af0738b9101b999ff997089a699035c6c1f603521d22a437d586e8c701e82"
       },
       "../src/app/index.ts": {
@@ -3183,7 +3183,8 @@
       "../src/file/file.middleware.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
         "../node_modules/@types/qs/index.d.ts",
-        "../node_modules/@types/express/ts4.0/index.d.ts"
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/multer/index.d.ts"
       ],
       "../src/file/file.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
@@ -3500,7 +3501,7 @@
       "../src/comment/comment.router.ts",
       "../src/avatar/avatar.controller.ts",
       "../src/avatar/avatar.router.ts",
-      "../src/app/app.middleware.ts",
+      "../src/app/index.ts",
       "../src/main.ts",
       "../src/avatar/avatar.middleware.ts",
       "../src/avatar/avatar.service.ts",
@@ -3521,7 +3522,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/app/index.ts"
+      "../src/app/app.middleware.ts"
     ]
   },
   "version": "3.8.3"
