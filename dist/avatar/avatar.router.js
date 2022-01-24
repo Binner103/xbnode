@@ -15,6 +15,6 @@ const avatarController = __importStar(require("./avatar.controller"));
 const auth_middleware_1 = require("../auth/auth.middleware");
 const avatar_middleware_1 = require("./avatar.middleware");
 const router = express_1.default.Router();
-router.post('/avatar', auth_middleware_1.authGuard, avatar_middleware_1.avatarInterceptor, avatarController.store);
+router.post('/avatar', auth_middleware_1.authGuard, avatar_middleware_1.avatarInterceptor, avatar_middleware_1.avatarProcessor, avatarController.store);
 exports.default = router;
 //# sourceMappingURL=avatar.router.js.map

@@ -802,11 +802,11 @@
         "signature": "32f4d193b994517374502f5b1c73bc08bf89fc5b57219c7eb7b891608d7736b2"
       },
       "../src/avatar/avatar.middleware.ts": {
-        "version": "17462b5aef3c9cd602f924689a32a19cdddb615ffb934fcbdda523a3e3aae521",
-        "signature": "4fa29b80b8a38cb6d3b872383716e214f4150e2b47d586f24da57f7a17d3f18d"
+        "version": "583448639f77d94137756a4eb274462c2c950e5efa974b30e8f2ff08a68d70d4",
+        "signature": "dc7510cd0726e14172e98182a71261e3f33d72c6baa556da4f91a3ffd6e21552"
       },
       "../src/avatar/avatar.router.ts": {
-        "version": "e61a3b8eda5a48204bdac5d49760590b7a40bf2ecdf09ec35679315af94792c6",
+        "version": "12899df414be33ad4f4895f3acd520ee34f7f440956b9ae2acc9feca44dcb80b",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/app/app.middleware.ts": {
@@ -2037,6 +2037,8 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/avatar/avatar.middleware.ts": [
+        "../node_modules/@types/node/path.d.ts",
+        "../node_modules/jimp/types/ts3.1/index.d.ts",
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../node_modules/@types/multer/index.d.ts",
         "../src/file/file.middleware.ts",
