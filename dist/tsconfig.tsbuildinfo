@@ -798,11 +798,15 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/avatar/avatar.controller.ts": {
-        "version": "5ca9eda6a2e32df2444fd43098d78f82e78deeed27d55ab016a06968c41f3450",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+        "version": "f276e8fa92c435a17bcbcb33d8000a78d191ea96a1ec219c9f5b42e0d428751b",
+        "signature": "32f4d193b994517374502f5b1c73bc08bf89fc5b57219c7eb7b891608d7736b2"
+      },
+      "../src/avatar/avatar.middleware.ts": {
+        "version": "17462b5aef3c9cd602f924689a32a19cdddb615ffb934fcbdda523a3e3aae521",
+        "signature": "4fa29b80b8a38cb6d3b872383716e214f4150e2b47d586f24da57f7a17d3f18d"
       },
       "../src/avatar/avatar.router.ts": {
-        "version": "0307db5f203efb300bc66f7dc6bb1898d793c1adf3c339c0fe06503b4a8779c4",
+        "version": "e61a3b8eda5a48204bdac5d49760590b7a40bf2ecdf09ec35679315af94792c6",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/app/app.middleware.ts": {
@@ -816,10 +820,6 @@
       "../src/main.ts": {
         "version": "72825c81f79424aade8189c34989a983aea952d575be244259f262b561ae6ba0",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "../src/avatar/avatar.middleware.ts": {
-        "version": "17462b5aef3c9cd602f924689a32a19cdddb615ffb934fcbdda523a3e3aae521",
-        "signature": "4fa29b80b8a38cb6d3b872383716e214f4150e2b47d586f24da57f7a17d3f18d"
       },
       "../src/avatar/avatar.service.ts": {
         "version": "4d30fb38a53a74b48099b8b385c21a74e8325f483ec7033df853fd7fde4fa16c",
@@ -2036,9 +2036,17 @@
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/avatar/avatar.middleware.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/multer/index.d.ts",
+        "../src/file/file.middleware.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/avatar/avatar.router.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../src/avatar/avatar.controller.ts",
+        "../src/auth/auth.middleware.ts",
+        "../src/avatar/avatar.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/app/app.middleware.ts": [
@@ -2061,12 +2069,6 @@
         "../src/app/index.ts",
         "../src/app/app.config.ts",
         "../src/app/database/mysql.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/avatar/avatar.middleware.ts": [
-        "../node_modules/@types/express/ts4.0/index.d.ts",
-        "../node_modules/@types/multer/index.d.ts",
-        "../src/file/file.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/avatar/avatar.service.ts": [
@@ -3213,6 +3215,16 @@
       "../src/comment/comment.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
+      "../src/avatar/avatar.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/avatar/avatar.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
       "../src/avatar/avatar.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
@@ -3223,11 +3235,6 @@
       ],
       "../src/app/index.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
-      ],
-      "../src/avatar/avatar.middleware.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
-        "../node_modules/@types/qs/index.d.ts",
-        "../node_modules/@types/express/ts4.0/index.d.ts"
       ],
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts": [
         "../node_modules/@types/node/events.d.ts",
@@ -3507,7 +3514,7 @@
       "../src/comment/comment.controller.ts",
       "../src/comment/comment.router.ts",
       "../src/avatar/avatar.controller.ts",
-      "../src/avatar/avatar.router.ts",
+      "../src/avatar/avatar.middleware.ts",
       "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
@@ -3529,7 +3536,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/avatar/avatar.middleware.ts"
+      "../src/avatar/avatar.router.ts"
     ]
   },
   "version": "3.8.3"
