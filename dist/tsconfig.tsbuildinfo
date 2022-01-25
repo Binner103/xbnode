@@ -797,8 +797,16 @@
         "version": "740e2ee4fed893bbc2f3673252aef1f2224e39bac2392b45526f80b91e52f23d",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
+      "../src/avatar/avatar.model.ts": {
+        "version": "e132ce22a28ed32d3343a5929908a1f963ebafab435404e513ddeca21c89a85b",
+        "signature": "264281cadf3844746023ea0da92e9a00e3b333829ab7467e73177f0e0a6cb11a"
+      },
+      "../src/avatar/avatar.service.ts": {
+        "version": "27a9739541ab5de27760336dea2857c36ee72788b9c09ceb1ac7932917771432",
+        "signature": "92541cd1781a1ab89542df2881ca96889e95bca462f3924012eaa5480a416c24"
+      },
       "../src/avatar/avatar.controller.ts": {
-        "version": "f276e8fa92c435a17bcbcb33d8000a78d191ea96a1ec219c9f5b42e0d428751b",
+        "version": "fbc7255d99913e5034a259ad4db89b01c27d860c90ff838603d96e45929f5354",
         "signature": "32f4d193b994517374502f5b1c73bc08bf89fc5b57219c7eb7b891608d7736b2"
       },
       "../src/avatar/avatar.middleware.ts": {
@@ -819,10 +827,6 @@
       },
       "../src/main.ts": {
         "version": "72825c81f79424aade8189c34989a983aea952d575be244259f262b561ae6ba0",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "../src/avatar/avatar.service.ts": {
-        "version": "4d30fb38a53a74b48099b8b385c21a74e8325f483ec7033df853fd7fde4fa16c",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "../src/comment/comment.middleware.ts": {
@@ -2032,8 +2036,18 @@
         "../src/comment/comment.controller.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/avatar/avatar.model.ts": [
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/avatar/avatar.service.ts": [
+        "../src/app/database/mysql.ts",
+        "../src/avatar/avatar.model.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/avatar/avatar.controller.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/lodash/index.d.ts",
+        "../src/avatar/avatar.service.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/avatar/avatar.middleware.ts": [
@@ -2070,10 +2084,6 @@
       "../src/main.ts": [
         "../src/app/index.ts",
         "../src/app/app.config.ts",
-        "../src/app/database/mysql.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/avatar/avatar.service.ts": [
         "../src/app/database/mysql.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
@@ -3313,6 +3323,12 @@
         "../node_modules/@types/mysql2/promise.d.ts",
         "../node_modules/@types/mysql/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/avatar/avatar.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../src/avatar/avatar.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -3515,12 +3531,10 @@
       "../src/comment/comment.service.ts",
       "../src/comment/comment.controller.ts",
       "../src/comment/comment.router.ts",
-      "../src/avatar/avatar.controller.ts",
       "../src/avatar/avatar.middleware.ts",
       "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
-      "../src/avatar/avatar.service.ts",
       "../src/comment/comment.middleware.ts",
       "../src/tag/tag.middleware.ts",
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
@@ -3538,6 +3552,9 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
+      "../src/avatar/avatar.model.ts",
+      "../src/avatar/avatar.service.ts",
+      "../src/avatar/avatar.controller.ts",
       "../src/avatar/avatar.router.ts"
     ]
   },
