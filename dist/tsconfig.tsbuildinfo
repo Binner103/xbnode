@@ -802,8 +802,8 @@
         "signature": "264281cadf3844746023ea0da92e9a00e3b333829ab7467e73177f0e0a6cb11a"
       },
       "../src/avatar/avatar.service.ts": {
-        "version": "27a9739541ab5de27760336dea2857c36ee72788b9c09ceb1ac7932917771432",
-        "signature": "92541cd1781a1ab89542df2881ca96889e95bca462f3924012eaa5480a416c24"
+        "version": "fcaf88b80614136d130c74074cce52d080a24308d9e9e0a2b8569459272a302e",
+        "signature": "aa4ba5be2a5570a50c6b838e6c48e32d75aa601e56a298cf8b41f5d07a29de4f"
       },
       "../src/avatar/avatar.controller.ts": {
         "version": "fbc7255d99913e5034a259ad4db89b01c27d860c90ff838603d96e45929f5354",
@@ -3227,6 +3227,12 @@
       "../src/comment/comment.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
+      "../src/avatar/avatar.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../src/avatar/avatar.model.ts"
+      ],
       "../src/avatar/avatar.controller.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
         "../node_modules/@types/qs/index.d.ts",
@@ -3323,12 +3329,6 @@
         "../node_modules/@types/mysql2/promise.d.ts",
         "../node_modules/@types/mysql/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/avatar/avatar.service.ts": [
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
-        "../src/avatar/avatar.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -3531,7 +3531,10 @@
       "../src/comment/comment.service.ts",
       "../src/comment/comment.controller.ts",
       "../src/comment/comment.router.ts",
+      "../src/avatar/avatar.model.ts",
+      "../src/avatar/avatar.controller.ts",
       "../src/avatar/avatar.middleware.ts",
+      "../src/avatar/avatar.router.ts",
       "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
@@ -3552,10 +3555,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/avatar/avatar.model.ts",
-      "../src/avatar/avatar.service.ts",
-      "../src/avatar/avatar.controller.ts",
-      "../src/avatar/avatar.router.ts"
+      "../src/avatar/avatar.service.ts"
     ]
   },
   "version": "3.8.3"

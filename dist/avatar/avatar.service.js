@@ -9,4 +9,15 @@ exports.createAvatar = async (avatar) => {
     const [data] = await mysql_1.connection.promise().query(statement, avatar);
     return data;
 };
+exports.findAvatarByUserId = async (userId) => {
+    const statement = `
+        SELECT *
+        FROM avatar
+        WHERE userId = ?
+        ORDER BY avatar.id DESC
+        LIMIT 1
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, userId);
+    return data;
+};
 //# sourceMappingURL=avatar.service.js.map
