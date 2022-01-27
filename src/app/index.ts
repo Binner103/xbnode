@@ -22,7 +22,7 @@ app.use(express.json());
 /**
  * 路由
  */
-app.use(postRouter, userRouter, authRouter, fileRouter, tagRouter, commentRouter, avatarRouter);
+app.use(postRouter, userRouter, authRouter, fileRouter, tagRouter, commentRouter, avatarRouter, likeRouter);
 
 /**
  * 使用默认异常处理器
