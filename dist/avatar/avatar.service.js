@@ -18,6 +18,6 @@ exports.findAvatarByUserId = async (userId) => {
         LIMIT 1
     `;
     const [data] = await mysql_1.connection.promise().query(statement, userId);
-    return data;
+    return data[0];
 };
 //# sourceMappingURL=avatar.service.js.map

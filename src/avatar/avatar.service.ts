@@ -39,5 +39,5 @@ export const findAvatarByUserId = async (
     const [data] = await connection.promise().query(statement, userId);
 
     // 提供数据
-    return data;
+    return data[0];
 };

@@ -11,6 +11,11 @@ const router = express.Router();
 router.post('/avatar', authGuard, avatarInterceptor, avatarProcessor, avatarController.store);
 
 /**
+ * 头像服务
+ */
+router.get('/user/:userId/avatar', avatarController.serve);
+
+/**
  * 导出默认路由
  */
  export default router;
