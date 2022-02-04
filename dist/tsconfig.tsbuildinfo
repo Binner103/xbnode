@@ -818,8 +818,8 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/like/like.service.ts": {
-        "version": "fa6caa77f36384fe24318c4a15fcac90102b2e7ff8005875148fef7458fb61a2",
-        "signature": "fcbc792be642ecb595cfb4cf864d00ba4d5db4734c7fe55e206f0a3f0e15a678"
+        "version": "afba6a62409f9a82cb640c73152704103ed48c53a8207467204cc7be824ea494",
+        "signature": "b06db6567d93d68796627a9f2c7367154cd18388f2c7dc18f597ed38495e0a61"
       },
       "../src/like/like.controller.ts": {
         "version": "0f2893230c8e9ea47efc18675760373eff56ece29091715b4aabfa83ccdb32c4",
@@ -3587,10 +3587,9 @@
       "../src/avatar/avatar.controller.ts",
       "../src/avatar/avatar.middleware.ts",
       "../src/avatar/avatar.router.ts",
-      "../src/like/like.service.ts",
-      "../src/like/like.controller.ts",
       "../src/like/like.router.ts",
       "../src/app/app.middleware.ts",
+      "../src/app/index.ts",
       "../src/main.ts",
       "../src/comment/comment.middleware.ts",
       "../src/like/like.middleware.ts",
@@ -3610,7 +3609,8 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/app/index.ts"
+      "../src/like/like.service.ts",
+      "../src/like/like.controller.ts"
     ]
   },
   "version": "3.8.3"

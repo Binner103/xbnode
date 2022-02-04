@@ -10,4 +10,12 @@ exports.createUserLikePost = async (userId, postId) => {
     const [data] = await mysql_1.connection.promise().query(statement, [userId, postId]);
     return data;
 };
+exports.deleteUserLikePost = async (userId, postId) => {
+    const statement = `
+        DELETE FROM user_like_post
+        WHERE userId = ? AND postId = ?
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, [userId, postId]);
+    return data;
+};
 //# sourceMappingURL=like.service.js.map
