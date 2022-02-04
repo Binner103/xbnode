@@ -24,6 +24,10 @@ router.post('/comments', authGuard, commentController.store);
  */
  router.delete('/comments/:commentId', authGuard, accessControl({possession: true}), commentController.destroy);
 
+/**
+ * 评论列表
+ */
+router.get('/comments', commentController.index);
 
 /**
  * 导出路由

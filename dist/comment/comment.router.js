@@ -18,5 +18,6 @@ router.post('/comments', auth_middleware_1.authGuard, commentController.store);
 router.post('/comments/:commentId/reply', auth_middleware_1.authGuard, commentController.reply);
 router.patch('/comments/:commentId', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), commentController.update);
 router.delete('/comments/:commentId', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), commentController.destroy);
+router.get('/comments', commentController.index);
 exports.default = router;
 //# sourceMappingURL=comment.router.js.map
