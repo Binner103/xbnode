@@ -21,4 +21,5 @@ export declare const createPostTag: (postId: number, tagId: number) => Promise<i
 export declare const postHasTag: (postId: number, tagId: number) => Promise<boolean>;
 export declare const deletePostTag: (postId: number, tagId: number) => Promise<import("mysql2/typings/mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql2/typings/mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql2/typings/mysql/lib/protocol/packets/OkPacket") | import("mysql2/typings/mysql/lib/protocol/packets/OkPacket")[] | import("mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader")>;
 export declare const getPostTotalCount: (options: GetPostOptions) => Promise<any>;
+export declare const getPostById: (postId: number) => Promise<any>;
 export {};

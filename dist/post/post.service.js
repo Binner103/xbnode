@@ -97,4 +97,27 @@ exports.getPostTotalCount = async (options) => {
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data[0].total;
 };
+exports.getPostById = async (postId) => {
+    const statement = `
+        SELECT
+            post.id,
+            post.title,
+            post.content,
+            ${post_provider_1.sqlFragment.user},
+            ${post_provider_1.sqlFragment.totalComments},
+            ${post_provider_1.sqlFragment.file},
+            ${post_provider_1.sqlFragment.tags},
+            ${post_provider_1.sqlFragment.totalLikes}
+        FROM post
+        ${post_provider_1.sqlFragment.leftJoinUser}
+        ${post_provider_1.sqlFragment.leftJoinOneFile}
+        ${post_provider_1.sqlFragment.leftJoinTag}
+        WHERE post.id = ?
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, postId);
+    if (!data[0].id) {
+        throw new Error('NOT_FOUND');
+    }
+    return data[0];
+};
 //# sourceMappingURL=post.service.js.map

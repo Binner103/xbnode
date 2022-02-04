@@ -454,8 +454,8 @@
         "signature": "5a2db421dacc066eabcb68258dce95124bf754de13d52e165796c1209d7f0309"
       },
       "../src/post/post.service.ts": {
-        "version": "e2d61da0fc4685383e466423c000e5772600b24baffa764b54aaa2d744aee4fb",
-        "signature": "204b1eb63694f440e552a0a551ac2fda60a0f098f41639b942b903780aac2978"
+        "version": "b048c03c6a6a37f7aae4011da13228d1462af008e2e6646d6b6890e3cb853fcc",
+        "signature": "5473dbf51f2340c86d3f3ef4ecac81d26125f9a2c73ef80a60f23e4625817ccf"
       },
       "../types/express.d.ts": {
         "version": "9447dfc8e4957aba9b5c73b89c076096f5641de1be6bfc574f0eeef0e6112faa",
@@ -830,7 +830,7 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/app/app.middleware.ts": {
-        "version": "2a64df3d57f65a4d98a800a63e0d510c2c9bea126927331af355f871b3e916d1",
+        "version": "6a7e77e40736e2e2ae5feaea9217081d88d8fa79bccc28db4e10be69e343a85a",
         "signature": "f89af0738b9101b999ff997089a699035c6c1f603521d22a437d586e8c701e82"
       },
       "../src/app/index.ts": {
@@ -3496,6 +3496,7 @@
       "../src/app/database/mysql.ts",
       "../src/post/post.model.ts",
       "../src/post/post.provider.ts",
+      "../src/post/post.service.ts",
       "../types/express.d.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
@@ -3589,7 +3590,6 @@
       "../src/like/like.service.ts",
       "../src/like/like.controller.ts",
       "../src/like/like.router.ts",
-      "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../src/comment/comment.middleware.ts",
@@ -3610,7 +3610,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/post/post.service.ts"
+      "../src/app/app.middleware.ts"
     ]
   },
   "version": "3.8.3"
