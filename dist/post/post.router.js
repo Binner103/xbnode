@@ -21,5 +21,6 @@ router.patch('/posts/:postId', auth_middleware_1.authGuard, auth_middleware_1.ac
 router.delete('/posts/:postId', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), postController.destroy);
 router.post('/posts/:postId/tag', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), postController.storePostTag);
 router.delete('/posts/:postId/tag', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), postController.destroyPostTag);
+router.get('/posts/:postId', postController.show);
 exports.default = router;
 //# sourceMappingURL=post.router.js.map

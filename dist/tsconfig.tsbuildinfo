@@ -554,8 +554,8 @@
         "signature": "93e336958b994f20b563c5f336da5d58bf9fef062e376544df25bbb2f7a0e8db"
       },
       "../src/post/post.controller.ts": {
-        "version": "9c42c97c3709aaba444a2817f2611e333d7f15e328345b08f7fe0d5444a3677b",
-        "signature": "ad6779419f8e627c85059d4dc7ebaa11acdf879c1abd081ab9a70fa8d3029d6a"
+        "version": "9d28f5fd5d29727d819730e381c457d7ca0f01b2c5e01b6897880a47387b6172",
+        "signature": "d57dc87e5709c48b9f9d6a0375ec3d5b2efd61ed1fe1d5f064be3824b2ab2a22"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
         "version": "aa9ed9cdcb5a2a48aaafb5a4c5d2961acfef2c791149aa4265b65dc061011dba",
@@ -586,7 +586,7 @@
         "signature": "e54e5c7ff98b82bb692c1c726b3b8be35db3ec2500dbb221ae9c6f535e244530"
       },
       "../src/post/post.router.ts": {
-        "version": "40b156d6f6b5ee96482a75fa194b59227a968ac697527dd1584a3d52b3f055bb",
+        "version": "615776004e35e740d7f7b27cf8b38fecb463efb5c7dcce364b98321917d8f343",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/user/user.controller.ts": {
@@ -3529,7 +3529,6 @@
       "../src/auth/auth.service.ts",
       "../src/auth/auth.middleware.ts",
       "../src/post/post.middleware.ts",
-      "../src/post/post.router.ts",
       "../src/user/user.controller.ts",
       "../src/user/user.middleware.ts",
       "../src/user/user.router.ts",
@@ -3590,6 +3589,7 @@
       "../src/like/like.service.ts",
       "../src/like/like.controller.ts",
       "../src/like/like.router.ts",
+      "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../src/comment/comment.middleware.ts",
@@ -3610,7 +3610,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/app/app.middleware.ts"
+      "../src/post/post.router.ts"
     ]
   },
   "version": "3.8.3"
