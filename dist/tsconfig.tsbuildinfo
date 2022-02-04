@@ -822,11 +822,11 @@
         "signature": "b06db6567d93d68796627a9f2c7367154cd18388f2c7dc18f597ed38495e0a61"
       },
       "../src/like/like.controller.ts": {
-        "version": "0f2893230c8e9ea47efc18675760373eff56ece29091715b4aabfa83ccdb32c4",
-        "signature": "82729bb02d55978929a9c2538a15abc33475e5e3aec160b181686ec60178a1fa"
+        "version": "27e1b139fe9e8fdf76a08e4a7cc22e6744b06aa24123f17107370d2a5978de8c",
+        "signature": "d34e20531e16a04c0382453d826393640be6b352804617065c1eb0f4b7e4ce97"
       },
       "../src/like/like.router.ts": {
-        "version": "ea9b706cd8c74381d1e80c3cc1056be9d0d9644aa7c7344700d07676748685f2",
+        "version": "b03f96fb77c7317f21ca92889f07be32a293561d11fee1347f43f053caaf959a",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/app/app.middleware.ts": {
@@ -3587,7 +3587,8 @@
       "../src/avatar/avatar.controller.ts",
       "../src/avatar/avatar.middleware.ts",
       "../src/avatar/avatar.router.ts",
-      "../src/like/like.router.ts",
+      "../src/like/like.service.ts",
+      "../src/like/like.controller.ts",
       "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
@@ -3609,8 +3610,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/like/like.service.ts",
-      "../src/like/like.controller.ts"
+      "../src/like/like.router.ts"
     ]
   },
   "version": "3.8.3"

@@ -12,4 +12,15 @@ exports.storeUserLikePost = async (request, response, next) => {
         next(error);
     }
 };
+exports.destroyUserLikePost = async (request, response, next) => {
+    const { postId } = request.params;
+    const { id: userId } = request.user;
+    try {
+        const data = await like_service_1.deleteUserLikePost(userId, parseInt(postId, 10));
+        response.send(data);
+    }
+    catch (error) {
+        next(error);
+    }
+};
 //# sourceMappingURL=like.controller.js.map
