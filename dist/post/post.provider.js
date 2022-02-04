@@ -79,5 +79,9 @@ exports.sqlFragment = {
             WHERE user_like_post.postId = post.id
         ) AS totalLikes
     `,
+    innerJoinUserLikePost: `
+        INNER JOIN user_like_post
+            ON user_like_post.postId = post.id
+    `,
 };
 //# sourceMappingURL=post.provider.js.map

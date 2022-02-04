@@ -450,11 +450,11 @@
         "signature": "b052e6fe7bad6bfc4c1b47a3fe023aa6aa9ac54f597cb8d61925b859fc7c9e2b"
       },
       "../src/post/post.provider.ts": {
-        "version": "698899af2bc619ccd24cb83d023e76abaf88b57c4be2de1bcd5e7b9a9b62abe1",
-        "signature": "fa7dbbf8db7208995689201e9d2c046f5e8d09364275f2560ce5d2447c4bbc5b"
+        "version": "b319d41d9f4af12820b9a2ea395e25c0de9bac9734208e5f11ac3d9fcba666e7",
+        "signature": "5a2db421dacc066eabcb68258dce95124bf754de13d52e165796c1209d7f0309"
       },
       "../src/post/post.service.ts": {
-        "version": "70a6a0d3411dc343afb7aa1f2dd0b722dc510fa15eadd3666c762dea58a57478",
+        "version": "e2d61da0fc4685383e466423c000e5772600b24baffa764b54aaa2d744aee4fb",
         "signature": "204b1eb63694f440e552a0a551ac2fda60a0f098f41639b942b903780aac2978"
       },
       "../types/express.d.ts": {
@@ -582,7 +582,7 @@
         "signature": "d0ebba73816783b39e2f2eceb3b14a98c78034917cffb34ccf401d98e4ecc318"
       },
       "../src/post/post.middleware.ts": {
-        "version": "72d91d068f5d1d774d270c7f216f32492e72c58b59b3af21461ea7bb687b0dd7",
+        "version": "e2af82e8244e4aa60ecaa9b3ac71f912f215fdd9e6eb707826238c7dc21cc891",
         "signature": "e54e5c7ff98b82bb692c1c726b3b8be35db3ec2500dbb221ae9c6f535e244530"
       },
       "../src/post/post.router.ts": {

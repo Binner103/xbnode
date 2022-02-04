@@ -22,6 +22,7 @@ exports.getPosts = async (options) => {
         ${post_provider_1.sqlFragment.leftJoinUser}
         ${post_provider_1.sqlFragment.leftJoinOneFile}
         ${post_provider_1.sqlFragment.leftJoinTag}
+        ${filter.name = 'userLiked' ? post_provider_1.sqlFragment.innerJoinUserLikePost : ''}
         WHERE ${filter.sql}
         GROUP BY post.id
         ORDER BY ${sort}
@@ -90,6 +91,7 @@ exports.getPostTotalCount = async (options) => {
         ${post_provider_1.sqlFragment.leftJoinUser}
         ${post_provider_1.sqlFragment.leftJoinOneFile}
         ${post_provider_1.sqlFragment.leftJoinTag}
+        ${filter.name = 'userLiked' ? post_provider_1.sqlFragment.innerJoinUserLikePost : ''}
         WHERE ${filter.sql}
     `;
     const [data] = await mysql_1.connection.promise().query(statement, params);

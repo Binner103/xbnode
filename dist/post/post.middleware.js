@@ -41,6 +41,13 @@ exports.filter = async (request, response, next) => {
             param: user
         };
     }
+    if (user && action == 'liked' && !tag) {
+        request.filter = {
+            name: 'userLiked',
+            sql: 'user_like_post.userId = ?',
+            param: user
+        };
+    }
     next();
 };
 exports.paginate = async (request, response, next) => {
