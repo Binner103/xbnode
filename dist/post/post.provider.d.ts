@@ -6,4 +6,5 @@ export declare const sqlFragment: {
     file: string;
     leftJoinTag: string;
     tags: string;
+    totalLikes: string;
 };

@@ -450,11 +450,11 @@
         "signature": "b052e6fe7bad6bfc4c1b47a3fe023aa6aa9ac54f597cb8d61925b859fc7c9e2b"
       },
       "../src/post/post.provider.ts": {
-        "version": "ee808bb0825f3e3aace1a8678a58b2f834a32eece272bb83ae53f2854a6f11fa",
-        "signature": "5c5c2eb075b3a4747eea7490ff9de28e04dc69e9ba9415f53951ea7f7ef3e038"
+        "version": "698899af2bc619ccd24cb83d023e76abaf88b57c4be2de1bcd5e7b9a9b62abe1",
+        "signature": "fa7dbbf8db7208995689201e9d2c046f5e8d09364275f2560ce5d2447c4bbc5b"
       },
       "../src/post/post.service.ts": {
-        "version": "3b0538c82ee3bc741945c5f4d605076260685f810e8c70303e570205d3b5f732",
+        "version": "70a6a0d3411dc343afb7aa1f2dd0b722dc510fa15eadd3666c762dea58a57478",
         "signature": "204b1eb63694f440e552a0a551ac2fda60a0f098f41639b942b903780aac2978"
       },
       "../types/express.d.ts": {
@@ -3496,7 +3496,6 @@
       "../src/app/database/mysql.ts",
       "../src/post/post.model.ts",
       "../src/post/post.provider.ts",
-      "../src/post/post.service.ts",
       "../types/express.d.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
@@ -3589,6 +3588,7 @@
       "../src/avatar/avatar.router.ts",
       "../src/like/like.service.ts",
       "../src/like/like.controller.ts",
+      "../src/like/like.router.ts",
       "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
@@ -3610,7 +3610,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/like/like.router.ts"
+      "../src/post/post.service.ts"
     ]
   },
   "version": "3.8.3"

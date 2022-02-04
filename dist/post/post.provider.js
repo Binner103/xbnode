@@ -72,5 +72,12 @@ exports.sqlFragment = {
             ) AS JSON
         ) AS tags
     `,
+    totalLikes: `
+        (
+            SELECT COUNT(user_like_post.postId)
+            FROM user_like_post
+            WHERE user_like_post.postId = post.id
+        ) AS totalLikes
+    `,
 };
 //# sourceMappingURL=post.provider.js.map

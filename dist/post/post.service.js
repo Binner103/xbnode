@@ -16,7 +16,8 @@ exports.getPosts = async (options) => {
             ${post_provider_1.sqlFragment.user},
             ${post_provider_1.sqlFragment.totalComments},
             ${post_provider_1.sqlFragment.file},
-            ${post_provider_1.sqlFragment.tags}
+            ${post_provider_1.sqlFragment.tags},
+            ${post_provider_1.sqlFragment.totalLikes}
         FROM post
         ${post_provider_1.sqlFragment.leftJoinUser}
         ${post_provider_1.sqlFragment.leftJoinOneFile}
