@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const app_config_1 = require("../app/app.config");
 exports.sort = async (request, response, next) => {
     const { sort } = request.query;
     let sqlSort;
@@ -50,11 +49,13 @@ exports.filter = async (request, response, next) => {
     }
     next();
 };
-exports.paginate = async (request, response, next) => {
-    const { page = 1 } = request.query;
-    const limit = parseInt(app_config_1.POSTS_PER_PAGE, 10) || 30;
-    const offset = limit * (Number(page) - 1);
-    request.pagination = { limit, offset };
-    next();
+exports.paginate = (itemsPerPage) => {
+    return async (request, response, next) => {
+        const { page = 1 } = request.query;
+        const limit = itemsPerPage || 30;
+        const offset = limit * (Number(page) - 1);
+        request.pagination = { limit, offset };
+        next();
+    };
 };
 //# sourceMappingURL=post.middleware.js.map
