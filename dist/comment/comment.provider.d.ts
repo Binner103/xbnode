@@ -3,4 +3,5 @@ export declare const sqlFragment: {
     user: string;
     leftJoinPost: string;
     post: string;
+    repliedComment: string;
 };

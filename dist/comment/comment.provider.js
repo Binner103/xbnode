@@ -24,5 +24,18 @@ exports.sqlFragment = {
             'title', post.title
         ) AS post
     `,
+    repliedComment: `
+        (
+            SELECT
+                JSON_OBJECT(
+                    'id', repliedComment.id,
+                    'content', repliedComment.content
+                )
+            FROM
+                comment repliedComment
+            WHERE
+                comment.parentId = repliedComment.id
+        ) AS repliedComment
+    `,
 };
 //# sourceMappingURL=comment.provider.js.map
