@@ -112,4 +112,4 @@ export const paginate = (itemsPerPage: number) => {
     
         next();
     };
-}
+};

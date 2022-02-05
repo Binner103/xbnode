@@ -582,7 +582,7 @@
         "signature": "d0ebba73816783b39e2f2eceb3b14a98c78034917cffb34ccf401d98e4ecc318"
       },
       "../src/post/post.middleware.ts": {
-        "version": "1bded60cb1b2790377b7e4bc556fa0e27749cd73cbb64b257e734e8de798b589",
+        "version": "7aa1825c240432f1fb5bcd58675cd30cd0811dfb3d0cd2199d90aea9ad68a25a",
         "signature": "f5dec6c001d6f71e92562503c9bd9e3c9df58da3232b3d2db94904c601f7885b"
       },
       "../src/post/post.router.ts": {
@@ -847,10 +847,6 @@
       },
       "../src/main.ts": {
         "version": "72825c81f79424aade8189c34989a983aea952d575be244259f262b561ae6ba0",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
-      },
-      "../src/like/like.middleware.ts": {
-        "version": "5ca9eda6a2e32df2444fd43098d78f82e78deeed27d55ab016a06968c41f3450",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "../src/tag/tag.middleware.ts": {
@@ -2133,10 +2129,6 @@
         "../src/app/index.ts",
         "../src/app/app.config.ts",
         "../src/app/database/mysql.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/like/like.middleware.ts": [
-        "../node_modules/@types/express/ts4.0/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/tag/tag.middleware.ts": [
@@ -3610,7 +3602,6 @@
       "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
-      "../src/like/like.middleware.ts",
       "../src/tag/tag.middleware.ts",
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
