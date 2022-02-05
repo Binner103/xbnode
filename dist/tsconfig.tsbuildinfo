@@ -798,7 +798,7 @@
         "signature": "44dc13ab70d16c35554db343321a79c478c95ba3a696fffbffa67e6fc9d09503"
       },
       "../src/comment/comment.middleware.ts": {
-        "version": "9f796bbb717345fc2ae0d730a977509a069abaf6c90194ab78213b19f2ff6895",
+        "version": "8dbc8c728812b35a615f2325beded21ddf1821ceaa652b072abc7cec14113696",
         "signature": "7a416244a3f054146c0a3267308083d8b0c37605fc5cd141ec41f8fd68105aa4"
       },
       "../src/comment/comment.router.ts": {

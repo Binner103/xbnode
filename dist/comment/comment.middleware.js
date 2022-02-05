@@ -21,6 +21,15 @@ exports.filter = async (request, response, next) => {
             param: user
         };
     }
+    ;
+    if (user && action == 'replied' && !post) {
+        request.filter = {
+            name: 'userReplied',
+            sql: 'comment.parentId IS NOT NULL AND comment.userId = ?',
+            param: user
+        };
+    }
+    ;
     next();
 };
 //# sourceMappingURL=comment.middleware.js.map
