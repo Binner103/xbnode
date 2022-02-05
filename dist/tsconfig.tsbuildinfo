@@ -786,11 +786,11 @@
         "signature": "a710a6e14e50680e5b5d0de7865ac67151aee47ed36823fc6d73ec06330aeb51"
       },
       "../src/comment/comment.provider.ts": {
-        "version": "645bfea61152c9fb4e92c55e1d5df6c30a1c7039441c7a8e80863bc3f2b33a38",
-        "signature": "c005dd7578660207c7e23e4e8273844335beceb724af8f429a9888234da07bfd"
+        "version": "f6da235a9804a6c532ecdea676355ae41d53e3239f93097b9586dd19491569d7",
+        "signature": "0c6ebd94e44df0e35f7eb1f70e3cd4213a618bba198302a7ac3f1f56c7efa363"
       },
       "../src/comment/comment.service.ts": {
-        "version": "a8832826613cb8aadb46813ea6d6b67f503dd1ba461abf43d1ce494f66d4063a",
+        "version": "04728bd97685c18ffcafd4d69a5626be2da7e58612511d80c527e8d2727de218",
         "signature": "1f0e2926ef72863672d348b63569c200c94b1bce77d040de922d65e11bab827a"
       },
       "../src/comment/comment.controller.ts": {

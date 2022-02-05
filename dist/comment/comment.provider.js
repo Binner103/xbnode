@@ -37,5 +37,15 @@ exports.sqlFragment = {
                 comment.parentId = repliedComment.id
         ) AS repliedComment
     `,
+    totalReplies: `
+    (
+        SELECT
+            COUNT(reply.id)
+        FROM
+            comment reply
+        WHERE
+            reply.parentId = comment.id
+    ) AS totalReplies
+    `,
 };
 //# sourceMappingURL=comment.provider.js.map
