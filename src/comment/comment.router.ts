@@ -1,6 +1,7 @@
 import express from 'express';
 import { authGuard, accessControl} from '../auth/auth.middleware';
 import * as commentController from './comment.controller';
+import { filter } from './comment.middleware';
 
 const router = express.Router();
 
@@ -27,7 +28,7 @@ router.post('/comments', authGuard, commentController.store);
 /**
  * 评论列表
  */
-router.get('/comments', commentController.index);
+router.get('/comments', filter, commentController.index);
 
 /**
  * 导出路由

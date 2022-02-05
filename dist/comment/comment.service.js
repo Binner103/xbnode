@@ -36,8 +36,12 @@ exports.deleteComment = async (commentId) => {
     const [data] = await mysql_1.connection.promise().query(statement, commentId);
     return data;
 };
-exports.getComments = async () => {
+exports.getComments = async (options) => {
+    const { filter } = options;
     let params = [];
+    if (filter.param) {
+        params = [filter.param, ...params];
+    }
     const statement = `
         SELECT
             comment.id,
@@ -48,6 +52,8 @@ exports.getComments = async () => {
             comment
         ${comment_provider_1.sqlFragment.leftJoinUser}
         ${comment_provider_1.sqlFragment.leftJoinPost}
+        WHERE
+            ${filter.sql}
         GROUP BY
             comment.id
         ORDER BY
