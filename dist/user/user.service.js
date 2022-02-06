@@ -9,16 +9,27 @@ exports.createUser = async (user) => {
     const [data] = await mysql_1.connection.promise().query(statement, user);
     return data;
 };
-exports.getUserByName = async (name, options = {}) => {
-    const { password } = options;
-    const statement = `
-        SELECT id,
-        name
-        ${password ? ', password' : ''}
-        FROM user
-        WHERE name = ?
-    `;
-    const [data] = await mysql_1.connection.promise().query(statement, name);
-    return data[0];
+exports.getUser = (condition) => {
+    return async (param, options = {}) => {
+        const { password } = options;
+        const statement = `
+            SELECT
+            user.id,
+            user.name,
+            IF (
+                COUNT(avatar.id), 1, NULL
+            ) AS avatar
+            ${password ? ', password' : ''}
+            FROM user
+            LEFT JOIN avatar
+                ON avatar.userId = user.id
+            WHERE
+                ${condition} = ?
+        `;
+        const [data] = await mysql_1.connection.promise().query(statement, param);
+        return data[0].id ? data[0] : null;
+    };
 };
+exports.getUserByName = exports.getUser('user.name');
+exports.getUserById = exports.getUser('user.id');
 //# sourceMappingURL=user.service.js.map

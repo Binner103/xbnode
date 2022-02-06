@@ -566,8 +566,8 @@
         "signature": "c0c4f6e95c87e2adb92ab955bf7156bfa015433ec41ebfe889c40ceedcdfdc6a"
       },
       "../src/user/user.service.ts": {
-        "version": "1cae2a91cc5e016a37545cb3547e57603835d1b4c76d8ceb6d9bed415618bf9c",
-        "signature": "a9b00243ae4bc52754f2243e4c916a3e02e2fb57003bb5103235a936f33b5e51"
+        "version": "85651c784e5a51ea908a1dd0d1c5342a3fd87fa4d9f156e22e1374c635ccf0e4",
+        "signature": "565247469d31a90f3783f207e4fdbf5d901cbb97ff2f1b1e914a915bd8a1fd26"
       },
       "../node_modules/@types/bcrypt/index.d.ts": {
         "version": "ea90e22ea5f022eb8a55b8fc0d75fed38c3f240cd4025eec3ab457d5707af159",
@@ -3542,7 +3542,6 @@
       "../src/post/post.controller.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
-      "../src/user/user.service.ts",
       "../node_modules/@types/bcrypt/index.d.ts",
       "../src/auth/auth.service.ts",
       "../src/auth/auth.middleware.ts",
@@ -3598,6 +3597,7 @@
       "../src/tag/tag.router.ts",
       "../src/comment/comment.model.ts",
       "../src/comment/comment.provider.ts",
+      "../src/comment/comment.service.ts",
       "../src/comment/comment.controller.ts",
       "../src/comment/comment.middleware.ts",
       "../src/comment/comment.router.ts",
@@ -3629,7 +3629,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/comment/comment.service.ts"
+      "../src/user/user.service.ts"
     ]
   },
   "version": "3.8.3"
