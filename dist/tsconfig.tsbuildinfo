@@ -590,8 +590,8 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/user/user.controller.ts": {
-        "version": "bbc8aeadccab491dcb0b8f51ccc0aee5a4ea6798670a0dc4f2bf9d063b15b4fc",
-        "signature": "a97d936775c69d70c03839867ecca2e4d2b1201290aeddb97bd312453d08e5ba"
+        "version": "992c2d30fa3de86b8a9e4025bde72c047ee1043f9cd5829dbc408b9b38c185cd",
+        "signature": "0715b3954976a2ba7af8ef1f8786c7cef013be75b3ea4e5cf22aff99f16d3293"
       },
       "../src/auth/auth.controller.ts": {
         "version": "5c713c1a89761772032cc8269edd12c3a73f958d9de1b1446867c8ed9700dbb0",
@@ -602,7 +602,7 @@
         "signature": "41b77d62367b8946cec5e652a8689cef2cb83af9542a4ef7373a1b38027399fd"
       },
       "../src/user/user.router.ts": {
-        "version": "a0a0e16df2b1e0d15f7e35858ae4dd7b97832377337f0e6ec2f0e64a0d8c7f52",
+        "version": "870febdba9497f0aad6665ab332fc8f3ef3482d71364fe1ffdbcedf6564c9148",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/auth/auth.router.ts": {
@@ -1791,7 +1791,7 @@
       ],
       "../src/user/user.controller.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
-        "../src/user/user.model.ts",
+        "../node_modules/@types/lodash/index.d.ts",
         "../src/user/user.service.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
@@ -1812,6 +1812,7 @@
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../src/user/user.controller.ts",
         "../src/user/user.middleware.ts",
+        "../src/auth/auth.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/auth/auth.router.ts": [
@@ -3544,12 +3545,15 @@
       "../src/post/post.controller.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
+      "../src/user/user.service.ts",
       "../node_modules/@types/bcrypt/index.d.ts",
       "../src/auth/auth.service.ts",
+      "../src/auth/auth.middleware.ts",
       "../src/post/post.middleware.ts",
       "../src/post/post.router.ts",
+      "../src/user/user.controller.ts",
       "../src/auth/auth.controller.ts",
-      "../src/user/user.router.ts",
+      "../src/user/user.middleware.ts",
       "../src/auth/auth.router.ts",
       "../node_modules/@jimp/core/types/jimp.d.ts",
       "../node_modules/@jimp/core/types/etc.d.ts",
@@ -3628,10 +3632,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/user/user.service.ts",
-      "../src/user/user.middleware.ts",
-      "../src/user/user.controller.ts",
-      "../src/auth/auth.middleware.ts"
+      "../src/user/user.router.ts"
     ]
   },
   "version": "3.8.3"
