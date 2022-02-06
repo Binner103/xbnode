@@ -195,7 +195,7 @@ export const getCommentReplies = async (
             comment
         ${sqlFragment.leftJoinUser}
         WHERE
-            comment.parent.id = ?
+            comment.parentId = ?
         GROUP BY
             comment.id
     `;

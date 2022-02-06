@@ -98,7 +98,7 @@ exports.getCommentReplies = async (options) => {
             comment
         ${comment_provider_1.sqlFragment.leftJoinUser}
         WHERE
-            comment.parent.id = ?
+            comment.parentId = ?
         GROUP BY
             comment.id
     `;

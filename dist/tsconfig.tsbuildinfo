@@ -790,7 +790,7 @@
         "signature": "0c6ebd94e44df0e35f7eb1f70e3cd4213a618bba198302a7ac3f1f56c7efa363"
       },
       "../src/comment/comment.service.ts": {
-        "version": "aa096ac7a764dd3b355c93c45487065d1101261cf095d06fee0487dc62b0b370",
+        "version": "ce2538f19f09f0d70616ebc6038d00cccda4a1a46bce05dd137c226ca3639409",
         "signature": "ba13c970be658bccf5c1d9ee438b8f829f4cf00cbbc363bdef237f7a953b586a"
       },
       "../src/comment/comment.controller.ts": {
@@ -802,7 +802,7 @@
         "signature": "7a416244a3f054146c0a3267308083d8b0c37605fc5cd141ec41f8fd68105aa4"
       },
       "../src/comment/comment.router.ts": {
-        "version": "39a11bfb2a78fc446acf076b22a176b7c68b0f0344897eefec95a43e172cab47",
+        "version": "4a41fe2b63801fa18cfab08ba386107c34204fa6a7c8d9dd381b52dc6aa78649",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/avatar/avatar.model.ts": {
@@ -3598,9 +3598,9 @@
       "../src/tag/tag.router.ts",
       "../src/comment/comment.model.ts",
       "../src/comment/comment.provider.ts",
-      "../src/comment/comment.service.ts",
       "../src/comment/comment.controller.ts",
       "../src/comment/comment.middleware.ts",
+      "../src/comment/comment.router.ts",
       "../src/avatar/avatar.model.ts",
       "../src/avatar/avatar.service.ts",
       "../src/avatar/avatar.controller.ts",
@@ -3629,7 +3629,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/comment/comment.router.ts"
+      "../src/comment/comment.service.ts"
     ]
   },
   "version": "3.8.3"
