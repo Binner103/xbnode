@@ -10,4 +10,8 @@ interface GetCommentsOptions {
 }
 export declare const getComments: (options: GetCommentsOptions) => Promise<import("mysql2/typings/mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql2/typings/mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql2/typings/mysql/lib/protocol/packets/OkPacket") | import("mysql2/typings/mysql/lib/protocol/packets/OkPacket")[] | import("mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader")>;
 export declare const getCommentsTotalCount: (options: GetCommentsOptions) => Promise<any>;
+interface getCommentRepliesOptions {
+    commentId: number;
+}
+export declare const getCommentReplies: (options: getCommentRepliesOptions) => Promise<import("mysql2/typings/mysql/lib/protocol/packets/RowDataPacket")[] | import("mysql2/typings/mysql/lib/protocol/packets/RowDataPacket")[][] | import("mysql2/typings/mysql/lib/protocol/packets/OkPacket") | import("mysql2/typings/mysql/lib/protocol/packets/OkPacket")[] | import("mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader")>;
 export {};

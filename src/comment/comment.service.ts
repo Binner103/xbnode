@@ -2,7 +2,6 @@ import { GetPostsOptionsFilter, GetPostOptionsPagination} from "../post/post.ser
 import { connection } from "../app/database/mysql";
 import { CommentModel } from "./comment.model";
 import { sqlFragment } from "./comment.provider";
-import { off } from "process";
 
 
 /**
@@ -171,4 +170,39 @@ export const getCommentsTotalCount = async (
 
     // 提供数据
     return data[0].total;
+};
+
+/**
+ * 评论回复列表
+ */
+interface getCommentRepliesOptions {
+    commentId: number;
+}
+
+export const getCommentReplies = async (
+    options: getCommentRepliesOptions
+) => {
+    // 解构选项
+    const { commentId } = options;
+
+    // 准备查询
+    const statement = `
+        SELECT
+            comment.id,
+            comment.content,
+            ${sqlFragment.user}
+        FROM
+            comment
+        ${sqlFragment.leftJoinUser}
+        WHERE
+            comment.parent.id = ?
+        GROUP BY
+            comment.id
+    `;
+
+    // 执行查询
+    const [data] = await connection.promise().query(statement, commentId);
+
+    // 提供数据
+    return data;
 };

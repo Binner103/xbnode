@@ -87,4 +87,22 @@ exports.getCommentsTotalCount = async (options) => {
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data[0].total;
 };
+exports.getCommentReplies = async (options) => {
+    const { commentId } = options;
+    const statement = `
+        SELECT
+            comment.id,
+            comment.content,
+            ${comment_provider_1.sqlFragment.user}
+        FROM
+            comment
+        ${comment_provider_1.sqlFragment.leftJoinUser}
+        WHERE
+            comment.parent.id = ?
+        GROUP BY
+            comment.id
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, commentId);
+    return data;
+};
 //# sourceMappingURL=comment.service.js.map
