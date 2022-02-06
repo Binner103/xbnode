@@ -66,4 +66,25 @@ exports.getComments = async (options) => {
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data;
 };
+exports.getCommentsTotalCount = async (options) => {
+    const { filter } = options;
+    let params = [];
+    if (filter.param) {
+        params = [filter.param, ...params];
+    }
+    const statement = `
+        SELECT
+            COUNT(
+                DISTINCT comment.id
+            ) AS total
+        FROM
+            comment
+        ${comment_provider_1.sqlFragment.leftJoinUser}
+        ${comment_provider_1.sqlFragment.leftJoinPost}
+        WHERE
+            ${filter.sql}
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, params);
+    return data[0].total;
+};
 //# sourceMappingURL=comment.service.js.map

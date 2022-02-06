@@ -790,11 +790,11 @@
         "signature": "0c6ebd94e44df0e35f7eb1f70e3cd4213a618bba198302a7ac3f1f56c7efa363"
       },
       "../src/comment/comment.service.ts": {
-        "version": "7c9372029243fa07863487203eacf88a65a1b5e5b5203efd138a10aa9170961b",
-        "signature": "6085c1be945f3966fbabc001e6c85abf273c0476badfa60781d7482a83dfcc8e"
+        "version": "ca0c4bd42e619e56dac17b497fac814135fa410f928484a645b1be29cc1726d3",
+        "signature": "d96351258a7615e00762450885dc78436a85a9da93a1cf943b4edbff635e55bd"
       },
       "../src/comment/comment.controller.ts": {
-        "version": "e370746832b68c5c6baea8d7d6dd7403f268e7474289198948f9a7d755f9be3a",
+        "version": "72d5be2a0637734fc4e1a86f547de73896978568e7d8eb754ef193081e2c816a",
         "signature": "44dc13ab70d16c35554db343321a79c478c95ba3a696fffbffa67e6fc9d09503"
       },
       "../src/comment/comment.middleware.ts": {
@@ -2053,6 +2053,7 @@
       ],
       "../src/comment/comment.controller.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/lodash/index.d.ts",
         "../src/comment/comment.service.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
@@ -3599,7 +3600,7 @@
       "../src/tag/tag.router.ts",
       "../src/comment/comment.model.ts",
       "../src/comment/comment.provider.ts",
-      "../src/comment/comment.controller.ts",
+      "../src/comment/comment.service.ts",
       "../src/comment/comment.middleware.ts",
       "../src/comment/comment.router.ts",
       "../src/avatar/avatar.model.ts",
@@ -3630,7 +3631,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/comment/comment.service.ts"
+      "../src/comment/comment.controller.ts"
     ]
   },
   "version": "3.8.3"
