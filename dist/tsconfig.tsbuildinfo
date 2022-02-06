@@ -838,7 +838,7 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/app/app.middleware.ts": {
-        "version": "5a8dc04f554366c0915e0bf670107b75455ffa4894c41d19a7394de9db72ff2e",
+        "version": "c25a73470ae9fd5eafe6d238034b1f63ad504d232967630bbb936c1ce62a4a32",
         "signature": "f89af0738b9101b999ff997089a699035c6c1f603521d22a437d586e8c701e82"
       },
       "../src/app/index.ts": {
@@ -3554,6 +3554,7 @@
       "../src/user/user.controller.ts",
       "../src/auth/auth.controller.ts",
       "../src/user/user.middleware.ts",
+      "../src/user/user.router.ts",
       "../src/auth/auth.router.ts",
       "../node_modules/@jimp/core/types/jimp.d.ts",
       "../node_modules/@jimp/core/types/etc.d.ts",
@@ -3612,7 +3613,6 @@
       "../src/like/like.service.ts",
       "../src/like/like.controller.ts",
       "../src/like/like.router.ts",
-      "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../src/like/like.middleware.ts",
@@ -3632,7 +3632,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/user/user.router.ts"
+      "../src/app/app.middleware.ts"
     ]
   },
   "version": "3.8.3"
