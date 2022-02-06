@@ -22,5 +22,6 @@ router.post('/comments/:commentId/reply', auth_middleware_1.authGuard, commentCo
 router.patch('/comments/:commentId', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), commentController.update);
 router.delete('/comments/:commentId', auth_middleware_1.authGuard, auth_middleware_1.accessControl({ possession: true }), commentController.destroy);
 router.get('/comments', comment_middleware_1.filter, post_middleware_1.paginate(app_config_1.COMMENTS_PER_PAGE), commentController.index);
+router.get('/comments/commentId/replies', commentController.indexReplies);
 exports.default = router;
 //# sourceMappingURL=comment.router.js.map

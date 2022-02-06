@@ -85,4 +85,14 @@ exports.index = async (request, response, next) => {
         next(error);
     }
 };
+exports.indexReplies = async (request, response, next) => {
+    const { commentId } = request.params;
+    try {
+        const replies = await comment_service_1.getCommentReplies({ commentId: parseInt(commentId, 10) });
+        response.send(replies);
+    }
+    catch (error) {
+        next(error);
+    }
+};
 //# sourceMappingURL=comment.controller.js.map

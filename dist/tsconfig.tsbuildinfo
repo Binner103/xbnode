@@ -794,15 +794,15 @@
         "signature": "ba13c970be658bccf5c1d9ee438b8f829f4cf00cbbc363bdef237f7a953b586a"
       },
       "../src/comment/comment.controller.ts": {
-        "version": "72d5be2a0637734fc4e1a86f547de73896978568e7d8eb754ef193081e2c816a",
-        "signature": "44dc13ab70d16c35554db343321a79c478c95ba3a696fffbffa67e6fc9d09503"
+        "version": "bf2fe7d3e6b693fd9a1a230f89d1351a9bb1f0ab57bb48fbcab4fb78d6380925",
+        "signature": "e8c8674e6e1671077b49d553e514a472df1e79161ce58efb75f178344bc6a492"
       },
       "../src/comment/comment.middleware.ts": {
         "version": "8dbc8c728812b35a615f2325beded21ddf1821ceaa652b072abc7cec14113696",
         "signature": "7a416244a3f054146c0a3267308083d8b0c37605fc5cd141ec41f8fd68105aa4"
       },
       "../src/comment/comment.router.ts": {
-        "version": "b7e3ee85f7cc67d025986e348c78d7084e48c658f5a57bb5a2f47609517cd759",
+        "version": "39a11bfb2a78fc446acf076b22a176b7c68b0f0344897eefec95a43e172cab47",
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6"
       },
       "../src/avatar/avatar.model.ts": {
@@ -2052,7 +2052,6 @@
       ],
       "../src/comment/comment.controller.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
-        "../node_modules/@types/lodash/index.d.ts",
         "../src/comment/comment.service.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
@@ -3599,9 +3598,9 @@
       "../src/tag/tag.router.ts",
       "../src/comment/comment.model.ts",
       "../src/comment/comment.provider.ts",
+      "../src/comment/comment.service.ts",
       "../src/comment/comment.controller.ts",
       "../src/comment/comment.middleware.ts",
-      "../src/comment/comment.router.ts",
       "../src/avatar/avatar.model.ts",
       "../src/avatar/avatar.service.ts",
       "../src/avatar/avatar.controller.ts",
@@ -3630,7 +3629,7 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/comment/comment.service.ts"
+      "../src/comment/comment.router.ts"
     ]
   },
   "version": "3.8.3"
