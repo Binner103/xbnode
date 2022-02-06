@@ -37,8 +37,8 @@ exports.deleteComment = async (commentId) => {
     return data;
 };
 exports.getComments = async (options) => {
-    const { filter } = options;
-    let params = [];
+    const { filter, pagination: { limit, offset } } = options;
+    let params = [limit, offset];
     if (filter.param) {
         params = [filter.param, ...params];
     }
@@ -60,6 +60,8 @@ exports.getComments = async (options) => {
             comment.id
         ORDER BY
             comment.id DESC
+        LIMIT ?
+        OFFSET ?
     `;
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data;
