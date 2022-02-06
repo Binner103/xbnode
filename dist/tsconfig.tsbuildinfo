@@ -849,6 +849,10 @@
         "version": "72825c81f79424aade8189c34989a983aea952d575be244259f262b561ae6ba0",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
+      "../src/like/like.middleware.ts": {
+        "version": "5ca9eda6a2e32df2444fd43098d78f82e78deeed27d55ab016a06968c41f3450",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
+      },
       "../src/tag/tag.middleware.ts": {
         "version": "e7b8f28ed58bd1d2a6395e6daea1d15ae712c7c22fe229b41ae8ee8f14db1aee",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
@@ -2131,6 +2135,10 @@
         "../src/app/database/mysql.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
+      "../src/like/like.middleware.ts": [
+        "../node_modules/@types/express/ts4.0/index.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
       "../src/tag/tag.middleware.ts": [
         "../node_modules/@types/express/ts4.0/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
@@ -3265,44 +3273,7 @@
         "../node_modules/@types/qs/index.d.ts",
         "../node_modules/@types/express/ts4.0/index.d.ts"
       ],
-      "../src/comment/comment.middleware.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
-        "../node_modules/@types/qs/index.d.ts",
-        "../node_modules/@types/express/ts4.0/index.d.ts"
-      ],
       "../src/comment/comment.router.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
-      ],
-      "../src/avatar/avatar.service.ts": [
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
-        "../src/avatar/avatar.model.ts"
-      ],
-      "../src/avatar/avatar.controller.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
-        "../node_modules/@types/qs/index.d.ts",
-        "../node_modules/@types/express/ts4.0/index.d.ts"
-      ],
-      "../src/avatar/avatar.middleware.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
-        "../node_modules/@types/qs/index.d.ts",
-        "../node_modules/@types/express/ts4.0/index.d.ts"
-      ],
-      "../src/avatar/avatar.router.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
-      ],
-      "../src/like/like.service.ts": [
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
-        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts"
-      ],
-      "../src/like/like.controller.ts": [
-        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
-        "../node_modules/@types/qs/index.d.ts",
-        "../node_modules/@types/express/ts4.0/index.d.ts"
-      ],
-      "../src/like/like.router.ts": [
         "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ],
       "../src/app/app.middleware.ts": [
@@ -3388,6 +3359,43 @@
         "../node_modules/@types/mysql2/promise.d.ts",
         "../node_modules/@types/mysql/index.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/avatar/avatar.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/avatar/avatar.router.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
+      ],
+      "../src/comment/comment.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/avatar/avatar.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../src/avatar/avatar.model.ts"
+      ],
+      "../src/avatar/avatar.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/like/like.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts"
+      ],
+      "../src/like/like.controller.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/ts4.0/index.d.ts"
+      ],
+      "../src/like/like.router.ts": [
+        "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -3500,12 +3508,7 @@
       "../node_modules/@types/node/globals.global.d.ts",
       "../node_modules/@types/node/index.d.ts",
       "../node_modules/dotenv/types/index.d.ts",
-      "../src/app/app.config.ts",
-      "../src/app/database/mysql.ts",
       "../src/post/post.model.ts",
-      "../src/post/post.provider.ts",
-      "../src/post/post.service.ts",
-      "../types/express.d.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
       "../node_modules/@types/express-serve-static-core/ts4.0/index.d.ts",
@@ -3529,14 +3532,10 @@
       "../node_modules/@types/lodash/index.d.ts",
       "../src/tag/tag.model.ts",
       "../src/tag/tag.service.ts",
-      "../src/post/post.controller.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
       "../node_modules/@types/bcrypt/index.d.ts",
-      "../src/auth/auth.service.ts",
-      "../src/auth/auth.middleware.ts",
-      "../src/post/post.router.ts",
       "../src/user/user.controller.ts",
       "../src/user/user.middleware.ts",
       "../src/user/user.router.ts",
@@ -3581,27 +3580,9 @@
       "../src/file/file.service.ts",
       "../src/file/file.controller.ts",
       "../node_modules/@types/multer/index.d.ts",
-      "../src/file/file.middleware.ts",
-      "../src/file/file.router.ts",
       "../src/tag/tag.controller.ts",
       "../src/tag/tag.router.ts",
       "../src/comment/comment.model.ts",
-      "../src/comment/comment.provider.ts",
-      "../src/comment/comment.service.ts",
-      "../src/comment/comment.controller.ts",
-      "../src/comment/comment.middleware.ts",
-      "../src/comment/comment.router.ts",
-      "../src/avatar/avatar.model.ts",
-      "../src/avatar/avatar.service.ts",
-      "../src/avatar/avatar.controller.ts",
-      "../src/avatar/avatar.middleware.ts",
-      "../src/avatar/avatar.router.ts",
-      "../src/like/like.service.ts",
-      "../src/like/like.controller.ts",
-      "../src/like/like.router.ts",
-      "../src/app/app.middleware.ts",
-      "../src/app/index.ts",
-      "../src/main.ts",
       "../src/tag/tag.middleware.ts",
       "../node_modules/@types/mysql/lib/protocol/sequences/sequence.d.ts",
       "../node_modules/@types/mysql/lib/protocol/packets/okpacket.d.ts",
@@ -3618,7 +3599,35 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/post/post.middleware.ts"
+      "../src/app/app.config.ts",
+      "../src/main.ts",
+      "../src/post/post.router.ts",
+      "../src/auth/auth.middleware.ts",
+      "../src/auth/auth.service.ts",
+      "../src/app/database/mysql.ts",
+      "../src/post/post.provider.ts",
+      "../src/post/post.service.ts",
+      "../src/comment/comment.service.ts",
+      "../src/comment/comment.controller.ts",
+      "../src/comment/comment.router.ts",
+      "../src/post/post.controller.ts",
+      "../types/express.d.ts",
+      "../src/post/post.middleware.ts",
+      "../src/file/file.middleware.ts",
+      "../src/avatar/avatar.middleware.ts",
+      "../src/app/index.ts",
+      "../src/file/file.router.ts",
+      "../src/comment/comment.provider.ts",
+      "../src/comment/comment.middleware.ts",
+      "../src/avatar/avatar.model.ts",
+      "../src/avatar/avatar.service.ts",
+      "../src/avatar/avatar.controller.ts",
+      "../src/like/like.service.ts",
+      "../src/like/like.controller.ts",
+      "../src/like/like.router.ts",
+      "../src/app/app.middleware.ts",
+      "../src/like/like.middleware.ts",
+      "../src/avatar/avatar.router.ts"
     ]
   },
   "version": "3.8.3"
