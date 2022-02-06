@@ -566,8 +566,8 @@
         "signature": "c0c4f6e95c87e2adb92ab955bf7156bfa015433ec41ebfe889c40ceedcdfdc6a"
       },
       "../src/user/user.service.ts": {
-        "version": "85651c784e5a51ea908a1dd0d1c5342a3fd87fa4d9f156e22e1374c635ccf0e4",
-        "signature": "565247469d31a90f3783f207e4fdbf5d901cbb97ff2f1b1e914a915bd8a1fd26"
+        "version": "2e338d408695ecc4c2c7ac1849b7262891af20704d390d8af17d15c21b9f9fd8",
+        "signature": "832e5787483306264b8f0bf0e9ef772b643d6090fc41ca581688c089fe4dec15"
       },
       "../node_modules/@types/bcrypt/index.d.ts": {
         "version": "ea90e22ea5f022eb8a55b8fc0d75fed38c3f240cd4025eec3ab457d5707af159",
@@ -3544,15 +3544,11 @@
       "../src/post/post.controller.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
-      "../src/user/user.service.ts",
       "../node_modules/@types/bcrypt/index.d.ts",
       "../src/auth/auth.service.ts",
-      "../src/auth/auth.middleware.ts",
       "../src/post/post.middleware.ts",
       "../src/post/post.router.ts",
-      "../src/user/user.controller.ts",
       "../src/auth/auth.controller.ts",
-      "../src/user/user.middleware.ts",
       "../src/user/user.router.ts",
       "../src/auth/auth.router.ts",
       "../node_modules/@jimp/core/types/jimp.d.ts",
@@ -3612,6 +3608,7 @@
       "../src/like/like.service.ts",
       "../src/like/like.controller.ts",
       "../src/like/like.router.ts",
+      "../src/app/app.middleware.ts",
       "../src/app/index.ts",
       "../src/main.ts",
       "../src/like/like.middleware.ts",
@@ -3631,7 +3628,10 @@
       "../node_modules/@types/mysql/index.d.ts",
       "../node_modules/@types/mysql2/promise.d.ts",
       "../node_modules/@types/mysql2/index.d.ts",
-      "../src/app/app.middleware.ts"
+      "../src/user/user.service.ts",
+      "../src/user/user.middleware.ts",
+      "../src/user/user.controller.ts",
+      "../src/auth/auth.middleware.ts"
     ]
   },
   "version": "3.8.3"

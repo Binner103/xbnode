@@ -32,4 +32,14 @@ exports.getUser = (condition) => {
 };
 exports.getUserByName = exports.getUser('user.name');
 exports.getUserById = exports.getUser('user.id');
+exports.updateUser = async (userId, userData) => {
+    const statement = `
+        UPDATE user
+        SET ?
+        WHERE user.id = ?
+    `;
+    const params = [userData, userId];
+    const [data] = await mysql_1.connection.promise().query(statement, params);
+    return data;
+};
 //# sourceMappingURL=user.service.js.map
