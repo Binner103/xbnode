@@ -4,8 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const supertest_1 = __importDefault(require("supertest"));
+const bcrypt_1 = __importDefault(require("bcrypt"));
 const app_1 = __importDefault(require("../app"));
 const mysql_1 = require("../app/database/mysql");
+const auth_service_1 = require("../auth/auth.service");
 const user_service_1 = require("./user.service");
 const testUser = {
     name: 'xb2-test-user-name',
@@ -57,8 +59,36 @@ describe('测试用户账户接口', () => {
         });
     });
     test('当用户不存在时,响应的状态码是 404', async () => {
-        const response = await supertest_1.default(app_1.default).get('/users/NaN');
+        const response = await supertest_1.default(app_1.default).get('/users/-1');
         expect(response.status).toBe(404);
+    });
+});
+describe('测试更新用户接口', () => {
+    test('更新用户时需要验证用户身份', async () => {
+        const response = await supertest_1.default(app_1.default).patch('/users');
+        expect(response.status).toBe(401);
+    });
+    test('更新用户数据', async () => {
+        const token = auth_service_1.signToken({
+            payload: { id: testUserCreated.id, name: testUserCreated.name }
+        });
+        const response = await supertest_1.default(app_1.default)
+            .patch('/users')
+            .set('Authorization', `Bearer ${token}`)
+            .send({
+            validate: {
+                password: testUser.password,
+            },
+            update: {
+                name: testUserUpdate.name,
+                password: testUserUpdate.password,
+            },
+        });
+        const user = await user_service_1.getUserById(testUserCreated.id, { password: true });
+        const matched = await bcrypt_1.default.compare(testUserUpdate.password, user.password);
+        expect(response.status).toBe(200);
+        expect(matched).toBeTruthy();
+        expect(user.name).toBe(testUserUpdate.name);
     });
 });
 //# sourceMappingURL=user.test.js.map
