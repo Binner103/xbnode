@@ -1,88 +1,53 @@
-import request from "supertest";
-import bcrypt from 'bcrypt';
-import app from '../app';
-import { connection } from "../app/database/mysql";
-import { signToken } from "../auth/auth.service";
-import { deleteUser, getUserById} from "./user.service";
-import { UserModel } from "./user.model";
-
-/**
- * 准备测试
- */
-const testUser: UserModel = {
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const supertest_1 = __importDefault(require("supertest"));
+const app_1 = __importDefault(require("../app"));
+const mysql_1 = require("../app/database/mysql");
+const user_service_1 = require("./user.service");
+const testUser = {
     name: 'xb2-test-user-name',
     password: '111111',
 };
-
-const testUserUpdate: UserModel = {
+const testUserUpdate = {
     name: 'xb2-test-user-new-name',
     password: '222222',
 };
-
-let testUserCreated: UserModel;
-
-/**
- * 所有测试结束后
- */
+let testUserCreated;
 afterAll(async () => {
-    //删除测试用户
     if (testUserCreated) {
-        await deleteUser(testUserCreated.id);
+        await user_service_1.deleteUser(testUserCreated.id);
     }
-
-    // 断开数据服务连接
-    connection.end();
+    mysql_1.connection.end();
 });
-
-/**
- * 创建用户
- */
 describe('测试创建用户接口', () => {
     test('创建用户时必须提供用户名', async () => {
-        // 请求接口
-        const response = await request(app)
+        const response = await supertest_1.default(app_1.default)
             .post('/users')
             .send({ password: testUser.password });
-        
-        //断言
         expect(response.status).toBe(400);
         expect(response.body).toEqual({ message: '请提供用户名' });
     });
-
     test('创建用户时必须提供密码', async () => {
-        // 请求接口
-        const response = await request(app)
+        const response = await supertest_1.default(app_1.default)
             .post('/users')
             .send({ name: testUser.name });
-        
-        //断言
         expect(response.status).toBe(400);
         expect(response.body).toEqual({ message: '请提供用户密码' });
     });
-
     test('成功创建用户以后,响应状态码应该是 201', async () => {
-        // 请求接口
-        const response = await request(app)
+        const response = await supertest_1.default(app_1.default)
             .post('/users')
             .send(testUser);
-        
-        // 设置创建的测试用户
-        testUserCreated = await getUserById(response.body.insertId, {password: true});
-
-        //断言
+        testUserCreated = await user_service_1.getUserById(response.body.insertId, { password: true });
         expect(response.status).toBe(201);
     });
 });
-
-/**
- * 用户账户
- */
 describe('测试用户账户接口', () => {
     test('响应里应该包含指定的属性', async () => {
-        // 请求接口
-        const response = await request(app).get(`/users/${testUserCreated.id}`);
-
-        //断言
+        const response = await supertest_1.default(app_1.default).get(`/users/${testUserCreated.id}`);
         expect(response.status).toBe(200);
         expect(response.body.name).toBe(testUser.name);
         expect(response.body).toMatchObject({
@@ -91,12 +56,9 @@ describe('测试用户账户接口', () => {
             avatar: null,
         });
     });
-
     test('当用户不存在时,响应的状态码是 404', async () => {
-        // 请求接口
-        const response = await request(app).get('/users/-1');
-
-        //断言
+        const response = await supertest_1.default(app_1.default).get('/users/NaN');
         expect(response.status).toBe(404);
     });
 });
+//# sourceMappingURL=user.test.js.map

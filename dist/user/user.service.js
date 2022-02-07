@@ -42,4 +42,12 @@ exports.updateUser = async (userId, userData) => {
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data;
 };
+exports.deleteUser = async (userId) => {
+    const statement = `
+        DELETE FROM user
+        WHERE id = ?
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, userId);
+    return data;
+};
 //# sourceMappingURL=user.service.js.map
