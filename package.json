@@ -6,7 +6,9 @@
   "scripts": {
     "start:dev": "./node_modules/.bin/tsc-watch --onSuccess \"node dist/main.js\"",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prebuild": "rimraf disk",
+    "build": "tsc -p tsconfig.build.json"
   },
   "keywords": [],
   "author": "hongbin",
