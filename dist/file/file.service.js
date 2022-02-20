@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = __importDefault(require("path"));
+const fs_1 = __importDefault(require("fs"));
 const jimp_1 = __importDefault(require("jimp"));
 const mysql_1 = require("../app/database/mysql");
 exports.createFile = async (file) => {
@@ -43,5 +44,40 @@ exports.imageResizer = async (image, file) => {
             .quality(85)
             .write(`${filePath}-thumbnail`);
     }
+};
+exports.getPostFiles = async (postId) => {
+    const statement = `
+        SELECT
+            file.filename
+        FROM
+            file
+        WHERE
+            postId = ?
+    `;
+    const [data] = await mysql_1.connection.promise().query(statement, postId);
+    return data;
+};
+exports.deletePostFiles = async (files) => {
+    const uploads = 'uploads';
+    const resized = [uploads, 'resized'];
+    files.map(file => {
+        const filesToDelete = [
+            [uploads, file.filename],
+            [...resized, `${file.filename}-thumbnail`],
+            [...resized, `${file.filename}-medium`],
+            [...resized, `${file.filename}-large`],
+        ];
+        filesToDelete.map(item => {
+            const filePath = path_1.default.join(...item);
+            fs_1.default.stat(filePath, (error, stats) => {
+                if (stats) {
+                    fs_1.default.unlink(filePath, error => {
+                        if (error)
+                            throw error;
+                    });
+                }
+            });
+        });
+    });
 };
 //# sourceMappingURL=file.service.js.map

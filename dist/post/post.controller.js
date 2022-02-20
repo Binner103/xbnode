@@ -6,6 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const lodash_1 = __importDefault(require("lodash"));
 const post_service_1 = require("./post.service");
 const tag_service_1 = require("../tag/tag.service");
+const file_service_1 = require("../file/file.service");
+const file_service_2 = require("../file/file.service");
 exports.index = async (request, response, next) => {
     try {
         const totalCount = await post_service_1.getPostTotalCount({ filter: request.filter });
@@ -52,6 +54,10 @@ exports.update = async (request, response, next) => {
 exports.destroy = async (request, response, next) => {
     const { postId } = request.params;
     try {
+        const files = await file_service_1.getPostFiles(parseInt(postId, 10));
+        if (files.length) {
+            await file_service_2.deletePostFiles(files);
+        }
         const data = await post_service_1.deletePost(parseInt(postId, 10));
         response.send(data);
     }
