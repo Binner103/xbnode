@@ -454,8 +454,8 @@
         "signature": "04a15722d2f238224ec6c398375792dcd98b53789f81d6cbb342cb0fdf262669"
       },
       "../src/post/post.service.ts": {
-        "version": "c51986269792eb3db36f6bc8e2b6215318a1d59f6fe5e0634a7829a72c624a8c",
-        "signature": "5473dbf51f2340c86d3f3ef4ecac81d26125f9a2c73ef80a60f23e4625817ccf"
+        "version": "c1ec2e49ca445d6cca2c270308f85babf9d770e28bef39b3ce22b65fef47e07b",
+        "signature": "ed2c72ff4557f3d790f8b4ac2a68b729eb5e8b6cfcc465488e7d2ec42c7d720f"
       },
       "../types/express.d.ts": {
         "version": "9447dfc8e4957aba9b5c73b89c076096f5641de1be6bfc574f0eeef0e6112faa",
@@ -554,7 +554,7 @@
         "signature": "93e336958b994f20b563c5f336da5d58bf9fef062e376544df25bbb2f7a0e8db"
       },
       "../src/post/post.controller.ts": {
-        "version": "aac51a70df9cdd906797c774ffca57ca61600cfe1114e57191c0a29ab34c68fb",
+        "version": "0bc4f4fd3f65888e676ee77f1430ad4c5804e48744fa969281e554733df44550",
         "signature": "d57dc87e5709c48b9f9d6a0375ec3d5b2efd61ed1fe1d5f064be3824b2ab2a22"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -1607,6 +1607,7 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/post/post.service.ts": [
+        "../src/auth/auth.interface.ts",
         "../src/app/database/mysql.ts",
         "../src/post/post.model.ts",
         "../src/post/post.provider.ts",
@@ -3027,7 +3028,8 @@
         "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
         "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
         "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
-        "../src/post/post.model.ts"
+        "../src/post/post.model.ts",
+        "../src/auth/auth.interface.ts"
       ],
       "../types/express.d.ts": [
         "../src/auth/auth.interface.ts",

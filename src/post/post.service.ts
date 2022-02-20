@@ -1,3 +1,4 @@
+import { TokenPayload } from "../auth/auth.interface";
 import { connection } from "../app/database/mysql";
 import { PostModel } from "./post.model";
 import { sqlFragment } from "./post.provider";
@@ -20,6 +21,7 @@ interface GetPostOptions {
   sort?: string;
   filter?: GetPostsOptionsFilter;
   pagination?: GetPostOptionsPagination;
+  currentUser?: TokenPayload;
 }
 
 export const getPosts = async (options: GetPostOptions) => {
@@ -27,6 +29,7 @@ export const getPosts = async (options: GetPostOptions) => {
     sort,
     filter,
     pagination: { limit, offset },
+    currentUser,
   } = options;
 
   // SQL 参数
@@ -37,6 +40,9 @@ export const getPosts = async (options: GetPostOptions) => {
     params = [filter.param, ...params];
   }
 
+  // 当前用户
+  const {id: userId} = currentUser;
+
   const statement = `
         SELECT
             post.id,
@@ -46,7 +52,14 @@ export const getPosts = async (options: GetPostOptions) => {
             ${sqlFragment.totalComments},
             ${sqlFragment.file},
             ${sqlFragment.tags},
-            ${sqlFragment.totalLikes}
+            ${sqlFragment.totalLikes},
+            (
+                SELECT COUNT(user_like_post.postId)
+                FROM user_like_post
+                WHERE
+                    user_like_post.postId = post.id
+                    && user_like_post.userId = ${userId}
+            ) as liked
         FROM post
         ${sqlFragment.leftJoinUser}
         ${sqlFragment.innerJoinOneFile}

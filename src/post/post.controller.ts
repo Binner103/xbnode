@@ -28,7 +28,8 @@ export const index = async(
         const posts = await getPosts({
             sort: request.sort,
             filter: request.filter,
-            pagination: request.pagination
+            pagination: request.pagination,
+            currentUser: request.user,
         });
         response.send(posts);
     } catch (error) {

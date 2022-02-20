@@ -18,7 +18,8 @@ exports.index = async (request, response, next) => {
         const posts = await post_service_1.getPosts({
             sort: request.sort,
             filter: request.filter,
-            pagination: request.pagination
+            pagination: request.pagination,
+            currentUser: request.user,
         });
         response.send(posts);
     }
