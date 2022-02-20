@@ -450,11 +450,11 @@
         "signature": "b052e6fe7bad6bfc4c1b47a3fe023aa6aa9ac54f597cb8d61925b859fc7c9e2b"
       },
       "../src/post/post.provider.ts": {
-        "version": "28064d51f7ea9693e6da25145caa587e6faf2098b5d125b5f0a7a9d98b47264c",
-        "signature": "04a15722d2f238224ec6c398375792dcd98b53789f81d6cbb342cb0fdf262669"
+        "version": "8223143fb310e4e54910207ce25ddbe37bdfee964d1f5cda3a6e56dbbae2a051",
+        "signature": "7188e232ddf7fe309d9423f1eeea9bbfff8f0f4af35d267b2751e7ea7b775b66"
       },
       "../src/post/post.service.ts": {
-        "version": "dade77a25927ee3fadbeb8aeef324daf7bcc6aa119e04b7bec2926077288de39",
+        "version": "e33a27636a03ca33aef51c00af0b40347d6166c716e363969aa245f8a4f6a512",
         "signature": "c29092f855544baef5207b9bb36d6690c3fc1cb69a12866d52406bbeb018019b"
       },
       "../types/express.d.ts": {
@@ -3904,7 +3904,6 @@
       "../src/app/database/mysql.ts",
       "../src/post/post.model.ts",
       "../src/post/post.provider.ts",
-      "../src/post/post.service.ts",
       "../types/express.d.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
@@ -3966,6 +3965,7 @@
       "../node_modules/jimp/types/ts3.1/index.d.ts",
       "../src/file/file.model.ts",
       "../src/file/file.service.ts",
+      "../src/post/post.controller.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
@@ -3973,6 +3973,7 @@
       "../src/auth/auth.service.ts",
       "../src/auth/auth.middleware.ts",
       "../src/post/post.middleware.ts",
+      "../src/post/post.router.ts",
       "../src/user/user.controller.ts",
       "../src/auth/auth.controller.ts",
       "../src/user/user.middleware.ts",
@@ -4049,8 +4050,7 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/post/post.controller.ts",
-      "../src/post/post.router.ts"
+      "../src/post/post.service.ts"
     ]
   },
   "version": "3.8.3"

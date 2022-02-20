@@ -41,7 +41,7 @@ export const getPosts = async (options: GetPostOptions) => {
   }
 
   // 当前用户
-  const {id: userId} = currentUser;
+  const { id: userId } = currentUser;
 
   const statement = `
         SELECT
@@ -194,7 +194,7 @@ export const getPostTotalCount = async (options: GetPostOptions) => {
             COUNT(DISTINCT post.id) AS total
         FROM post
         ${sqlFragment.leftJoinUser}
-        ${sqlFragment.innerJoinOneFile}
+        ${sqlFragment.innerJoinFile}
         ${sqlFragment.leftJoinTag}
         ${filter.name == "userLiked" ? sqlFragment.innerJoinUserLikePost : ""}
         WHERE ${filter.sql}
@@ -211,14 +211,18 @@ export const getPostTotalCount = async (options: GetPostOptions) => {
  * 按ID 调取内容
  */
 export interface getPostByIdOptions {
-    currentUser?: TokenPayload;
+  currentUser?: TokenPayload;
 }
 
-export const getPostById = async (postId: number, options: getPostByIdOptions = {}) => {
+export const getPostById = async (
+  postId: number,
+  options: getPostByIdOptions = {}
+) => {
+  const {
+    currentUser: { id: userId },
+  } = options;
 
-    const {currentUser: { id: userId }} = options;
-
-    // 准备查询
+  // 准备查询
   const statement = `
         SELECT
             post.id,
