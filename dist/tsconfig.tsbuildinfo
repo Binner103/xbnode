@@ -454,8 +454,8 @@
         "signature": "04a15722d2f238224ec6c398375792dcd98b53789f81d6cbb342cb0fdf262669"
       },
       "../src/post/post.service.ts": {
-        "version": "c1ec2e49ca445d6cca2c270308f85babf9d770e28bef39b3ce22b65fef47e07b",
-        "signature": "ed2c72ff4557f3d790f8b4ac2a68b729eb5e8b6cfcc465488e7d2ec42c7d720f"
+        "version": "dade77a25927ee3fadbeb8aeef324daf7bcc6aa119e04b7bec2926077288de39",
+        "signature": "c29092f855544baef5207b9bb36d6690c3fc1cb69a12866d52406bbeb018019b"
       },
       "../types/express.d.ts": {
         "version": "9447dfc8e4957aba9b5c73b89c076096f5641de1be6bfc574f0eeef0e6112faa",
@@ -554,7 +554,7 @@
         "signature": "93e336958b994f20b563c5f336da5d58bf9fef062e376544df25bbb2f7a0e8db"
       },
       "../src/post/post.controller.ts": {
-        "version": "0bc4f4fd3f65888e676ee77f1430ad4c5804e48744fa969281e554733df44550",
+        "version": "7de50d2262d767b7e659ee27830e5143c4593cdde6f61b0ad9b5035c354e99b6",
         "signature": "d57dc87e5709c48b9f9d6a0375ec3d5b2efd61ed1fe1d5f064be3824b2ab2a22"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {

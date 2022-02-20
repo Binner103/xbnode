@@ -110,7 +110,9 @@ exports.destroyPostTag = async (request, response, next) => {
 exports.show = async (request, response, next) => {
     const { postId } = request.params;
     try {
-        const post = await post_service_1.getPostById(parseInt(postId, 10));
+        const post = await post_service_1.getPostById(parseInt(postId, 10), {
+            currentUser: request.user,
+        });
         response.send(post);
     }
     catch (error) {

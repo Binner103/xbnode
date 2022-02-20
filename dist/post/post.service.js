@@ -105,7 +105,8 @@ exports.getPostTotalCount = async (options) => {
     const [data] = await mysql_1.connection.promise().query(statement, params);
     return data[0].total;
 };
-exports.getPostById = async (postId) => {
+exports.getPostById = async (postId, options = {}) => {
+    const { currentUser: { id: userId } } = options;
     const statement = `
         SELECT
             post.id,
@@ -115,7 +116,14 @@ exports.getPostById = async (postId) => {
             ${post_provider_1.sqlFragment.totalComments},
             ${post_provider_1.sqlFragment.file},
             ${post_provider_1.sqlFragment.tags},
-            ${post_provider_1.sqlFragment.totalLikes}
+            ${post_provider_1.sqlFragment.totalLikes},
+            (
+                SELECT COUNT(user_like_post.postId)
+                FROM user_like_post
+                WHERE
+                    user_like_post.postId = post.id
+                    && user_like_post.userId = ${userId}
+            ) as liked
         FROM post
         ${post_provider_1.sqlFragment.leftJoinUser}
         ${post_provider_1.sqlFragment.leftJoinOneFile}
