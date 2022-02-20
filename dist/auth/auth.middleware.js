@@ -34,22 +34,31 @@ exports.validateLoginData = async (request, response, next) => {
 };
 exports.authGuard = (request, response, next) => {
     console.log('👮 验证用户身份');
-    try {
-        const authorization = request.header('Authorization');
-        if (!authorization)
-            throw new Error();
-        const token = authorization.replace('Bearer ', '');
-        if (!token)
-            throw new Error();
-        const decoded = jsonwebtoken_1.default.verify(token, app_config_1.PUBLIC_KEY, {
-            algorithms: ['RS256']
-        });
-        request.user = decoded;
+    if (request.user.id) {
         next();
     }
-    catch (error) {
+    else {
         next(new Error('UNAUTHORIZED'));
     }
+};
+exports.currentUser = (request, response, next) => {
+    let user = {
+        id: null,
+        name: 'anonymous'
+    };
+    try {
+        const authorization = request.header('Authorization');
+        const token = authorization.replace('Bearer ', '');
+        if (token) {
+            const decoded = jsonwebtoken_1.default.verify(token, app_config_1.PUBLIC_KEY, {
+                algorithms: ['RS256']
+            });
+            user = decoded;
+        }
+    }
+    catch (error) { }
+    request.user = user;
+    next();
 };
 exports.accessControl = (options) => {
     return async (request, response, next) => {

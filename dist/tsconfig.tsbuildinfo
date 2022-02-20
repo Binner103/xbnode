@@ -554,7 +554,7 @@
         "signature": "93e336958b994f20b563c5f336da5d58bf9fef062e376544df25bbb2f7a0e8db"
       },
       "../src/post/post.controller.ts": {
-        "version": "9d28f5fd5d29727d819730e381c457d7ca0f01b2c5e01b6897880a47387b6172",
+        "version": "aac51a70df9cdd906797c774ffca57ca61600cfe1114e57191c0a29ab34c68fb",
         "signature": "d57dc87e5709c48b9f9d6a0375ec3d5b2efd61ed1fe1d5f064be3824b2ab2a22"
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -578,8 +578,8 @@
         "signature": "5ebd32cdcfe59a18ccee6d0e01330486e8dd8a4bceedb20236c280389605092f"
       },
       "../src/auth/auth.middleware.ts": {
-        "version": "033776bfc41e75f12fbb25b27a027f7a9cfc072e9f013e8e9366ecd050da0508",
-        "signature": "d0ebba73816783b39e2f2eceb3b14a98c78034917cffb34ccf401d98e4ecc318"
+        "version": "540c3a4c191fc8ff3d5467872d11faf8ae65bda518a8476dd74d335e963a02c2",
+        "signature": "dbf0205453a264b0b0b2adae9e9b3016e2656d46e22738b2552470d5eca3d4c4"
       },
       "../src/post/post.middleware.ts": {
         "version": "7aa1825c240432f1fb5bcd58675cd30cd0811dfb3d0cd2199d90aea9ad68a25a",
@@ -846,7 +846,7 @@
         "signature": "f89af0738b9101b999ff997089a699035c6c1f603521d22a437d586e8c701e82"
       },
       "../src/app/index.ts": {
-        "version": "c0ce4f1f00b1e4ae2df3e769e658b6a7eb4376e1baee0d80088fe3c97babde12",
+        "version": "5fb66f3b27a697f3f56b19799c8bdd08b29a87b2ed947aa88ec15b0de08b7470",
         "signature": "629a4ade941bd431c195407a5afd3602c6461fdcc0f65735b7e4a68f8d5d3d51"
       },
       "../src/main.ts": {
@@ -2261,6 +2261,7 @@
         "../src/like/like.router.ts",
         "../src/app/app.router.ts",
         "../src/app/app.middleware.ts",
+        "../src/auth/auth.middleware.ts",
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/main.ts": [
@@ -3899,6 +3900,7 @@
       "../src/app/database/mysql.ts",
       "../src/post/post.model.ts",
       "../src/post/post.provider.ts",
+      "../src/post/post.service.ts",
       "../types/express.d.ts",
       "../node_modules/@types/range-parser/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
@@ -3923,7 +3925,6 @@
       "../node_modules/@types/lodash/index.d.ts",
       "../src/tag/tag.model.ts",
       "../src/tag/tag.service.ts",
-      "../src/post/post.controller.ts",
       "../node_modules/@types/jsonwebtoken/index.d.ts",
       "../src/user/user.model.ts",
       "../src/user/user.service.ts",
@@ -4045,7 +4046,7 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/post/post.service.ts"
+      "../src/post/post.controller.ts"
     ]
   },
   "version": "3.8.3"

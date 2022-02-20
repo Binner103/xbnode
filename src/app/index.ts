@@ -10,6 +10,7 @@ import avatarRouter from "../avatar/avatar.router";
 import likeRouter from "../like/like.router";
 import appRouter from "./app.router";
 import { defaultErrorHandler } from "./app.middleware";
+import { currentUser } from "../auth/auth.middleware";
 
 /**
  * 创建应用
@@ -30,6 +31,11 @@ app.use(
  * 处理JSON
  */
 app.use(express.json());
+
+/**
+ * 当前用户
+ */
+app.use(currentUser)
 
 /**
  * 路由
